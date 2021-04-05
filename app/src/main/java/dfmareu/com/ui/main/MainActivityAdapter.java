@@ -14,7 +14,7 @@ import dfmareu.com.models.Reunion;
 public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityViewHolder> {
 
     private final Listener callback;
-    ArrayList<Reunion> mReunions;
+    final ArrayList<Reunion> mReunions;
     public MainActivityAdapter(ArrayList<Reunion> reunions, Listener callback) {
         this.mReunions = reunions;
         this.callback= callback;

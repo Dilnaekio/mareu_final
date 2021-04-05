@@ -12,7 +12,7 @@ import dfmareu.com.util.ReunionUtil;
 
 public class MainActivityViewHolder extends RecyclerView.ViewHolder {
 
-    ActivityMainItemBinding activityMainItemBinding;
+    final ActivityMainItemBinding activityMainItemBinding;
     Reunion reunion;
 
     public MainActivityViewHolder(@NonNull ActivityMainItemBinding activityMainItemBinding) {

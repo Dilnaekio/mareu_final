@@ -7,7 +7,7 @@ import dfmareu.com.databinding.ActivityCreateReunionItemBinding;
 
 public class CreateReunionViewHolder extends RecyclerView.ViewHolder{
 
-    ActivityCreateReunionItemBinding activityCreateReunionItemBinding;
+    final ActivityCreateReunionItemBinding activityCreateReunionItemBinding;
 
     public CreateReunionViewHolder(@NonNull ActivityCreateReunionItemBinding activityCreateReunionItemBinding) {
         super(activityCreateReunionItemBinding.getRoot());

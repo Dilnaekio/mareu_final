@@ -52,7 +52,7 @@ public class CreateReunion extends BaseActivity {
     int day, month, year;
     //RecyclerView guests list
     RecyclerView vGuestRecyclerView;
-    ArrayList<String> mParticipantsList = new ArrayList<>();
+    final ArrayList<String> mParticipantsList = new ArrayList<>();
 
     //Edits text to add subject and participants to the reunion
     EditText mSubject, mParticipants;

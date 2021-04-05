@@ -11,7 +11,7 @@ import java.util.List;
 import dfmareu.com.databinding.ActivityCreateReunionItemBinding;
 
 public class CreateReunionAdapter extends RecyclerView.Adapter<CreateReunionViewHolder> {
-    List<String> mParticipantsList;
+    final List<String> mParticipantsList;
 
     public CreateReunionAdapter(List<String> mParticipantsList) {
         this.mParticipantsList = mParticipantsList;

@@ -12,7 +12,7 @@ public abstract class FakeApiServiceGenerator {
        add("Lolita");
        add("Charles");
     }};
-    public static ArrayList<Reunion> FakeReunions = new ArrayList<>(Arrays.asList(
+    public static final ArrayList<Reunion> FakeReunions = new ArrayList<>(Arrays.asList(
         new Reunion(FakeUsersList, "Les crocodiles", "Salle A", 21, 3,21,"10h00"),
         new Reunion(FakeUsersList, "Les singes", "Salle B", 22, 3,21,"11h00"),
         new Reunion(FakeUsersList, "Les chiens", "Salle C", 23, 3,21,"12h00"),

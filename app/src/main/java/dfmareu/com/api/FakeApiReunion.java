@@ -8,7 +8,7 @@ import static dfmareu.com.api.FakeApiServiceGenerator.generateReunion;
 
 public class FakeApiReunion implements ApiReunion{
 
-    private ArrayList<Reunion> reunions = generateReunion();
+    private final ArrayList<Reunion> reunions = generateReunion();
 
     public FakeApiReunion() {
     }
