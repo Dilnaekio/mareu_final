@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Mareu</string>
+
+    <!-- IC descriptions -->
+    <string name="ic_description">Image ronde de couleur pour les salles de réunion</string>
+    <string name="ic_delete_btn">Supprime la réunion</string>
+    <string name="ic_cancel_btn">Annule la création de réunion</string>
+    <string name="ic_validation_btn">Valide la création de réunion</string>
+
+    <!--toolbars -->
+    <string name="toolbar_main_menu">Ma réu</string>
+    <string name="toolbar_add_reunion">Nouvelle réunion</string>
+
+    <!-- Date and Time description -->
+    <string name="chosen_date">%1$d/%2$d/%3$d</string>
+    <string name="chosen_hour">%1$d:%2$d</string>
+
+    <!-- String Arrays -->
+    <string-array name="ReunionRooms">
+        <item>Salle A</item>
+        <item>Salle B</item>
+        <item>Salle C</item>
+        <item>Salle D</item>
+        <item>Salle E</item>
+        <item>Salle F</item>
+        <item>Salle G</item>
+        <item>Salle H</item>
+        <item>Salle I</item>
+        <item>Salle J</item>
+    </string-array>
+
+    <!-- No data strings -->
+    <string name="No_Room_Number">No room</string>
+    <string name="No_Subject_Data">No subject data</string>
+    <string name="No_Time_Data">No time data</string>
+    <string name="No_Participants_Data">Personne n\'est encore invité !</string>
+    <string name="No_Date_Selected">Aucune date n\'a été choisie</string>
+    <string name="No_Time_Selected">Aucune heure n\'a été choisie</string>
+    <string name="No_Reunion_Organised">Aucune réunion n\'a été organisée</string>
+
+    <!-- Infos strings -->
+    <string name="Reunion_Subject_TxtView">Sujet principal de la réunion</string>
+    <string name="Reunion_Subject_EditTxtHint">Veuillez entrer ici le sujet de la réunion</string>
+    <string name="Reunion_Date_BtnTxt">Sélectionnez une date</string>
+    <string name="Reunion_Date_Selected">Date sélectionnée:</string>
+    <string name="Reunion_Time_BtnTxt">Sélectionnez une heure</string>
+    <string name="Reunion_Time_Selected">Heure sélectionnée:</string>
+    <string name="Chosen_Room_TxtView">Salle choisie :</string>
+    <string name="Reunion_Participant_TxtView">Participants à la réunion :</string>
+    <string name="Reunion_Participant_EditTxtView">Entrez ici l\'adresse mail des personnes invitée à la réunion</string>
+    <string name="Reunion_Guest_List_TxtView">Invités à la réunion :</string>
+    <string name="Reunion_Tiret_TxtView">-</string>
+
+    <!-- Actions -->
+    <string name="Action_Delete_Btn">Supprimer</string>
+    <string name="Action_Title_Filtrage">Filtrage</string>
+    <string name="Action_Title_DateFiltrage">par date</string>
+    <string name="Action_Title_HourFiltrage">par heure</string>
+
+    <!-- Floatings buttons descriptions-->
+    <string name="Main_Floating_Button">Fab button to add reunion</string>
+    <string name="Create_Floating_Button">Fab button to validate reunion</string>
+
+    <!-- Errors -->
+    <string name="Reunion_Error_DateTxt">Veuillez sélectionner une date</string>
+    <string name="Reunion_Error_TimeTxt">Veuillez sélectionner une heure</string>
+</resources>
