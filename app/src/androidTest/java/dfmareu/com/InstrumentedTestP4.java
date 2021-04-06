@@ -1,5 +1,6 @@
 package dfmareu.com;
 
+import android.util.Log;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 
@@ -17,7 +18,11 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.util.ArrayList;
+
+import dfmareu.com.api.FakeApiServiceGenerator;
 import dfmareu.com.di.Injection;
+import dfmareu.com.models.Reunion;
 import dfmareu.com.repository.ReunionRepository;
 import dfmareu.com.ui.create.CreateReunion;
 import dfmareu.com.ui.main.MainActivity;
@@ -51,6 +56,15 @@ public class InstrumentedTestP4 {
     public void setUp() {
         Intents.init();
         reunionRepository = Injection.createReunionRepository();
+
+        int index = 0;
+        ArrayList<Reunion> fakeReunions = FakeApiServiceGenerator.FakeReunions;
+        Log.i("MainActivityFile", fakeReunions.toString());
+        while(index < fakeReunions.size()){
+            reunionRepository.addReunion(fakeReunions.get(index));
+            Log.i("MainActivityFile", fakeReunions.get(index).toString());
+            index++;
+        }
     }
 
     @After
