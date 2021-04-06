@@ -23,8 +23,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 
@@ -229,13 +227,17 @@ public class CreateReunion extends BaseActivity {
     @Override
     public void onConfigurationChanged(@NonNull Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        if (configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            binding.fabValidate.setSize(FloatingActionButton.SIZE_MINI);
-            binding.fabCancel.setSize(FloatingActionButton.SIZE_MINI);
-
-        } else if (configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            binding.fabValidate.setSize(FloatingActionButton.SIZE_NORMAL);
-            binding.fabCancel.setSize(FloatingActionButton.SIZE_NORMAL);
+        vSpinnerRooms.setSelection(0);
+        mSubject.setText("");
+        mChosenDate.setText(R.string.No_Date_Selected);
+        mChosenTime.setText(R.string.No_Time_Selected);
+        int size = mParticipantsList.size();
+        if (size > 0) {
+            mParticipantsList.subList(0, size).clear();
+            if (mParticipantsList.isEmpty()) {
+                vGuestRecyclerView.setVisibility(View.GONE);
+                mEmptyRecycler.setVisibility(View.VISIBLE);
+            }
         }
     }
 }

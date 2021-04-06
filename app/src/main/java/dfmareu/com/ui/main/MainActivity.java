@@ -1,6 +1,7 @@
 package dfmareu.com.ui.main;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,6 +10,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -176,4 +178,14 @@ public class MainActivity extends BaseActivity implements MainActivityAdapter.Li
         getReunionRepository().deleteReunion(reunion);
         mainActivityAdapter.notifyDataSetChanged();
     }
+
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration configuration) {
+        super.onConfigurationChanged(configuration);
+        int size = reunionRepository.getReunions().size();
+        if (size > 0) {
+            reunionRepository.getReunions().subList(0, size).clear();
+        }
+    }
 }
+
