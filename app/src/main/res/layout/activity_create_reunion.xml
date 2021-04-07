@@ -16,21 +16,13 @@
         android:theme="@style/Theme.Maréu"
         app:title="@string/toolbar_add_reunion"
         app:titleTextColor="@color/white">
-
     </androidx.appcompat.widget.Toolbar>
 
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
-        android:fillViewport="true"
-        android:overScrollMode="always"
-        android:padding="16dp">
-
         <LinearLayout
+            android:id="@+id/activity_create_reunion_firstLinear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
             android:orientation="vertical">
 
             <LinearLayout
@@ -108,7 +100,6 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/No_Date_Selected"
                         android:textSize="12sp" />
-
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -151,7 +142,6 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/No_Time_Selected"
                         android:textSize="12sp" />
-
                 </RelativeLayout>
             </LinearLayout>
 
@@ -222,17 +212,15 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.25" />
-
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
 
     <RelativeLayout
         android:id="@+id/activity_create_reunion_LinearLayout_Recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/scrollView"
+        android:layout_below="@id/activity_create_reunion_firstLinear"
         android:orientation="vertical">
 
         <TextView
@@ -260,7 +248,6 @@
             android:text="@string/No_Participants_Data"
             android:textStyle="bold"
             android:visibility="gone" />
-
     </RelativeLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -224,6 +224,7 @@ public class CreateReunion extends BaseActivity {
         vSpinnerRooms.setAdapter(roomsAdapter);
     }
 
+    //If we must disabled "autoportrait" in the manifest, we already have this onConfigurationChanged method set up to clean data
     @Override
     public void onConfigurationChanged(@NonNull Configuration configuration) {
         super.onConfigurationChanged(configuration);
