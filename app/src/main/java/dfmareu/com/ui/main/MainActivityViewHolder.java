@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 import dfmareu.com.databinding.ActivityMainItemBinding;
 import dfmareu.com.models.Reunion;
-import dfmareu.com.util.ReunionUtil;
+import dfmareu.com.util.ColorChip;
 
 public class MainActivityViewHolder extends RecyclerView.ViewHolder {
 
@@ -27,7 +27,7 @@ public class MainActivityViewHolder extends RecyclerView.ViewHolder {
         activityMainItemBinding.activityMainItemSubject.setText(reunion.getSubject());
         activityMainItemBinding.activityMainParticipants.setText(Arrays.toString(reunion.getParticipants()).replaceAll("[\\[\\]]",""));
         activityMainItemBinding.activityMainItemGarbage.setOnClickListener(view -> callback.onClickDelete(reunion));
-        int color = ReunionUtil.setColorChip(reunion);
+        int color = ColorChip.setColorChip(reunion);
         activityMainItemBinding.activityMainItemImageChip.setImageResource(color);
     }
 }
