@@ -126,6 +126,7 @@ public class MainActivity extends BaseActivity implements MainActivityAdapter.Li
         });
     }
 
+    //FILTERS
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
@@ -173,12 +174,14 @@ public class MainActivity extends BaseActivity implements MainActivityAdapter.Li
         return true;
     }
 
+    //Initialise the public interface "Listener" in MainActivityAdapter
     @Override
     public void onClickDelete(Reunion reunion) {
         getReunionRepository().deleteReunion(reunion);
         mainActivityAdapter.notifyDataSetChanged();
     }
 
+    //If the screen orientation change, reset the data from the array into the recyclerview
     @Override
     public void onConfigurationChanged(@NonNull Configuration configuration) {
         super.onConfigurationChanged(configuration);
