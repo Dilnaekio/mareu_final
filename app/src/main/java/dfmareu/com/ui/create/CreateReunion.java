@@ -29,7 +29,7 @@ import java.util.Calendar;
 import dfmareu.com.R;
 import dfmareu.com.base.BaseActivity;
 import dfmareu.com.databinding.ActivityCreateReunionBinding;
-import dfmareu.com.util.ReunionUtil;
+import dfmareu.com.util.IsMailValid;
 
 public class CreateReunion extends BaseActivity {
 
@@ -100,7 +100,7 @@ public class CreateReunion extends BaseActivity {
         mAcceptParticipant.setOnClickListener(v -> {
 
             String participantMail = mParticipants.getText().toString();
-            if (ReunionUtil.isMailValid(participantMail)) {
+            if (IsMailValid.isMailValid(participantMail)) {
                 mParticipantsList.add(participantMail);
                 RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(CreateReunion.this);
                 binding.activityCreateReunionRecyclerView.setLayoutManager(layoutManager);
