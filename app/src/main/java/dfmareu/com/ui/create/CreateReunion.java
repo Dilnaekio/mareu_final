@@ -7,7 +7,6 @@ import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -29,6 +28,7 @@ import java.util.Calendar;
 import dfmareu.com.R;
 import dfmareu.com.base.BaseActivity;
 import dfmareu.com.databinding.ActivityCreateReunionBinding;
+import dfmareu.com.util.CheckReunionInformations;
 import dfmareu.com.util.IsMailValid;
 
 public class CreateReunion extends BaseActivity {
@@ -42,12 +42,15 @@ public class CreateReunion extends BaseActivity {
     public static final String NAVIGATIONyear = "dfmareu.com.Views.NAVIGATIONyear";
     public static final String NAVIGATIONtime = "dfmareu.com.Views.NAVIGATIONtime";
     public static final String NAVIGATIONbundle = "dfmareu.com.Views.NAVIGATIONbundle";
+
     //TextViews for date and time picked by User
     TextView mChosenDate, mChosenTime, mEmptyRecycler;
+
     //Date/TimePickerDialog and var used for calendar
     DatePickerDialog date;
     TimePickerDialog time;
     int day, month, year;
+
     //RecyclerView guests list
     RecyclerView vGuestRecyclerView;
     final ArrayList<String> mParticipantsList = new ArrayList<>();
@@ -62,14 +65,11 @@ public class CreateReunion extends BaseActivity {
     //Buttons for selecting date, time and accept a mail
     Button mSelectDate, mSelectTime, mAcceptParticipant;
 
-    //Boolean to check if theses var are empty or not
-    boolean listIsEmpty, hourIsEmpty, subjectIsEmpty = true;
-
     //Resources
     Resources resources;
     int redColor;
-    Drawable redContour;
     ActivityCreateReunionBinding binding;
+    CheckReunionInformations checkReunionInformations;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,9 +79,9 @@ public class CreateReunion extends BaseActivity {
         configureSpinner();
         configureRecyclerView();
 
+        //Button and listener to check if user are typing mails in the edit text. If not, the user can't click on the button
         mAcceptParticipant.setEnabled(false);
         mParticipants.addTextChangedListener(new TextWatcher() {
-
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -97,8 +97,8 @@ public class CreateReunion extends BaseActivity {
             }
         });
 
+        //Listener to check is mails entered by user are valid (ex : id@domain.com)
         mAcceptParticipant.setOnClickListener(v -> {
-
             String participantMail = mParticipants.getText().toString();
             if (IsMailValid.isMailValid(participantMail)) {
                 mParticipantsList.add(participantMail);
@@ -108,7 +108,6 @@ public class CreateReunion extends BaseActivity {
                 vGuestRecyclerView.setVisibility(View.VISIBLE);
                 mEmptyRecycler.setVisibility(View.GONE);
                 Toast.makeText(this, "Participant ajouté !", Toast.LENGTH_SHORT).show();
-
             } else {
                 Toast.makeText(this, "Mail invalide !", Toast.LENGTH_SHORT).show();
             }
@@ -116,8 +115,9 @@ public class CreateReunion extends BaseActivity {
             mAcceptParticipant.setEnabled(false);
         });
 
+        //Calendar is used to know date and time in PickersDialog
         Calendar calendar = Calendar.getInstance();
-
+        //Button to choose date
         mSelectDate.setOnClickListener(v -> {
             int year = calendar.get(Calendar.YEAR);
             int month = calendar.get(Calendar.MONTH);
@@ -127,6 +127,7 @@ public class CreateReunion extends BaseActivity {
             date.show();
         });
 
+        //Button to choose time
         mSelectTime.setOnClickListener(v -> {
             int hour = calendar.get(Calendar.HOUR_OF_DAY);
             int min = calendar.get(Calendar.MINUTE);
@@ -135,55 +136,48 @@ public class CreateReunion extends BaseActivity {
             time.show();
         });
 
+        //Cancel the creation
         binding.fabCancel.setOnClickListener(v -> finish());
 
+        //Listener to validate if the new reunion is valid or not
         binding.fabValidate.setOnClickListener(v -> {
             Bundle ReunionInformations = new Bundle();
             Intent sendInfos = new Intent();
             String subject = mSubject.getText().toString();
             String spinner = (String) vSpinnerRooms.getSelectedItem();
             String hour = mChosenTime.getText().toString();
-
+            checkReunionInformations = new CheckReunionInformations(subject, mParticipantsList, hour);
+            //First, we must try to check if date had been chosen. Without try, we will get "Null Pointer Exception". We don't have this problem with time because it's a string
             try {
                 day = date.getDatePicker().getDayOfMonth();
-                if (subject.length() == 0) {
-                    mSubject.setBackground(redContour);
-                    subjectIsEmpty = true;
-                } else {
-                    subjectIsEmpty = false;
-                }
-                if (mParticipantsList.isEmpty()) {
-                    mParticipants.setBackground(redContour);
-                    mEmptyRecycler.setTextColor(redColor);
-                    listIsEmpty = true;
-                } else {
-                    listIsEmpty = false;
-                }
-                if (hour.contains("Aucune heure")) {
-                    mChosenTime.setText(R.string.Reunion_Error_TimeTxt);
-                    mChosenTime.setTextColor(redColor);
-                    mSelectTime.setBackgroundColor(redColor);
-                    hourIsEmpty = true;
-                } else {
-                    hourIsEmpty = false;
-                }
-                if (!subjectIsEmpty && !listIsEmpty && !hourIsEmpty) {
-                    ReunionInformations.putStringArrayList(NAVIGATIONparticipants, mParticipantsList);
-                    ReunionInformations.putString(NAVIGATIONsubject, subject);
-                    ReunionInformations.putString(NAVIGATIONroom, spinner);
-                    ReunionInformations.putInt(NAVIGATIONday, day);
-                    ReunionInformations.putInt(NAVIGATIONmonth, month);
-                    ReunionInformations.putInt(NAVIGATIONyear, year);
-                    ReunionInformations.putString(NAVIGATIONtime, hour);
-                    sendInfos.putExtra(NAVIGATIONbundle, ReunionInformations);
-                    setResult(Activity.RESULT_OK, sendInfos);
-                    finish();
-                }
             } catch (NullPointerException e) {
                 e.printStackTrace();
                 mChosenDate.setText(R.string.Reunion_Error_DateTxt);
                 mChosenDate.setTextColor(redColor);
-                mSelectDate.setBackgroundColor(redColor);
+            }
+            //If all required informations are written, it will send theses to the main activity and finish the current activity
+            if (checkReunionInformations.areInformationsCompleted()) {
+                ReunionInformations.putStringArrayList(NAVIGATIONparticipants, mParticipantsList);
+                ReunionInformations.putString(NAVIGATIONsubject, subject);
+                ReunionInformations.putString(NAVIGATIONroom, spinner);
+                ReunionInformations.putInt(NAVIGATIONday, day);
+                ReunionInformations.putInt(NAVIGATIONmonth, month);
+                ReunionInformations.putInt(NAVIGATIONyear, year);
+                ReunionInformations.putString(NAVIGATIONtime, hour);
+                sendInfos.putExtra(NAVIGATIONbundle, ReunionInformations);
+                setResult(Activity.RESULT_OK, sendInfos);
+                finish();
+            } else {
+                //If the informations are empty => set hint/text to red.
+                if(checkReunionInformations.getNotHourEmpty()){
+                    mChosenTime.setTextColor(redColor);
+                }
+                if(checkReunionInformations.getNotParticipantsEmpty()){
+                    mParticipants.setHintTextColor(redColor);
+                }
+                if(checkReunionInformations.getNotSubjectEmpty()){
+                    mSubject.setHintTextColor(redColor);
+                }
             }
         });
     }
@@ -214,8 +208,7 @@ public class CreateReunion extends BaseActivity {
     @SuppressLint("UseCompatLoadingForDrawables")
     private void configureResources() {
         resources = getResources();
-        redColor = getResources().getColor(R.color.red);
-        redContour = getResources().getDrawable(R.drawable.edittxt_color_contour);
+        redColor = resources.getColor(R.color.red);
     }
 
     private void configureSpinner() {
@@ -224,7 +217,7 @@ public class CreateReunion extends BaseActivity {
         vSpinnerRooms.setAdapter(roomsAdapter);
     }
 
-    //If we must disabled "autoportrait" in the manifest, we already have this onConfigurationChanged method set up to clean data
+    //If we must disabled "portrait" in the manifest, we already have this onConfigurationChanged method set up to clean data
     @Override
     public void onConfigurationChanged(@NonNull Configuration configuration) {
         super.onConfigurationChanged(configuration);
