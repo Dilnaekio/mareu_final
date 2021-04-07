@@ -8,6 +8,8 @@ import dfmareu.com.models.Reunion;
 public class FakeApiReunion implements ApiReunion{
 
     private final ArrayList<Reunion> reunions = new ArrayList<>();
+    //To test with fake list
+    // private final ArrayList<Reunion> reunions = FakeReunions;
 
     public FakeApiReunion() {
     }
