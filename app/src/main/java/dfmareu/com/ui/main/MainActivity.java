@@ -148,12 +148,15 @@ public class MainActivity extends BaseActivity implements MainActivityAdapter.Li
                     mainActivityAdapter = new MainActivityAdapter(reunionRepository.getReunions(), MainActivity.this);
                 } else {
                     String filterPattern = newText.toLowerCase().trim();
+                    //If not, create a copy with all reunions in two different arrays. One checking if filterPattern concern date, the second checking rooms
                     filteredDateList = reunionRepository.getFilteredDate(filterPattern);
                     filteredRoomList = reunionRepository.getFilteredRoom(filterPattern);
 
+                    //Check if date are filtered
                     if (!filteredDateList.isEmpty()) {
                         mainActivityAdapter = new MainActivityAdapter(filteredDateList, MainActivity.this);
                     } else {
+                        //If date list is empty, check if the room lists contains reunions (at this point, it necessarily contains reunions)
                         if (!filteredRoomList.isEmpty()) {
                             mainActivityAdapter = new MainActivityAdapter(filteredRoomList, MainActivity.this);
                         } else {

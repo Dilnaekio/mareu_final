@@ -4,10 +4,12 @@ import java.util.ArrayList;
 
 import dfmareu.com.models.Reunion;
 
+import static dfmareu.com.api.FakeApiServiceGenerator.generateReunion;
+
 
 public class FakeApiReunion implements ApiReunion{
 
-    private final ArrayList<Reunion> reunions = new ArrayList<>();
+    private final ArrayList<Reunion> reunions = generateReunion();
 
     public FakeApiReunion() {
     }

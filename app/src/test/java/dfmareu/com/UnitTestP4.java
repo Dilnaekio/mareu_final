@@ -31,9 +31,8 @@ public class UnitTestP4 {
     @Test
     public void getReunions(){
         ArrayList<Reunion> realReunions = reunionRepository.getReunions();
-        ArrayList<Reunion> fakeReunions = FakeReunions;
 
-        assertEquals(fakeReunions.size(), realReunions.size());
+        assertEquals(FakeReunions.size(), realReunions.size());
     }
 
     @Test
