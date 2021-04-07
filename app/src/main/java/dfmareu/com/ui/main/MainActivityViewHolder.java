@@ -12,22 +12,22 @@ import dfmareu.com.util.ColorChip;
 
 public class MainActivityViewHolder extends RecyclerView.ViewHolder {
 
-    final ActivityMainItemBinding activityMainItemBinding;
+    final ActivityMainItemBinding itemBinding;
     Reunion reunion;
 
     public MainActivityViewHolder(@NonNull ActivityMainItemBinding activityMainItemBinding) {
         super(activityMainItemBinding.getRoot());
-        this.activityMainItemBinding = activityMainItemBinding;
+        this.itemBinding = activityMainItemBinding;
     }
 
     public void bindView(Reunion reunion, MainActivityAdapter.Listener callback){
         this.reunion = reunion;
-        activityMainItemBinding.activityMainItemRoom.setText(reunion.getRoom());
-        activityMainItemBinding.activityMainItemHour.setText(reunion.getHours());
-        activityMainItemBinding.activityMainItemSubject.setText(reunion.getSubject());
-        activityMainItemBinding.activityMainParticipants.setText(Arrays.toString(reunion.getParticipants()).replaceAll("[\\[\\]]",""));
-        activityMainItemBinding.activityMainItemGarbage.setOnClickListener(view -> callback.onClickDelete(reunion));
+        itemBinding.activityMainItemRoom.setText(reunion.getRoom());
+        itemBinding.activityMainItemHour.setText(reunion.getHours());
+        itemBinding.activityMainItemSubject.setText(reunion.getSubject());
+        itemBinding.activityMainParticipants.setText(Arrays.toString(reunion.getParticipants()).replaceAll("[\\[\\]]",""));
+        itemBinding.activityMainItemGarbage.setOnClickListener(view -> callback.onClickDelete(reunion));
         int color = ColorChip.setColorChip(reunion);
-        activityMainItemBinding.activityMainItemImageChip.setImageResource(color);
+        itemBinding.activityMainItemImageChip.setImageResource(color);
     }
 }

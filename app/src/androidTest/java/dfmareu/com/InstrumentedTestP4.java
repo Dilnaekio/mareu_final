@@ -1,6 +1,5 @@
 package dfmareu.com;
 
-import android.util.Log;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 
@@ -59,10 +58,8 @@ public class InstrumentedTestP4 {
 
         int index = 0;
         ArrayList<Reunion> fakeReunions = FakeApiServiceGenerator.FakeReunions;
-        Log.i("MainActivityFile", fakeReunions.toString());
         while(index < fakeReunions.size()){
             reunionRepository.addReunion(fakeReunions.get(index));
-            Log.i("MainActivityFile", fakeReunions.get(index).toString());
             index++;
         }
     }

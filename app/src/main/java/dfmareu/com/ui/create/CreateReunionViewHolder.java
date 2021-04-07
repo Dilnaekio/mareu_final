@@ -7,14 +7,14 @@ import dfmareu.com.databinding.ActivityCreateReunionItemBinding;
 
 public class CreateReunionViewHolder extends RecyclerView.ViewHolder{
 
-    final ActivityCreateReunionItemBinding activityCreateReunionItemBinding;
+    final ActivityCreateReunionItemBinding reunionItemBinding;
 
     public CreateReunionViewHolder(@NonNull ActivityCreateReunionItemBinding activityCreateReunionItemBinding) {
         super(activityCreateReunionItemBinding.getRoot());
-        this.activityCreateReunionItemBinding = activityCreateReunionItemBinding;
+        this.reunionItemBinding = activityCreateReunionItemBinding;
     }
 
     public void bindView(String participant) {
-        activityCreateReunionItemBinding.activityCreateReunionItemGuestListTxtView.setText(participant);
+        reunionItemBinding.activityCreateReunionItemGuestListTxtView.setText(participant);
     }
 }
