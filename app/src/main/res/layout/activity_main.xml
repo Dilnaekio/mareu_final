@@ -31,6 +31,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="10dp"
+        app:fabSize="auto"
         android:backgroundTint="@color/FabRed"
         android:contentDescription="@string/Main_Floating_Button"
         android:elevation="10dp"
