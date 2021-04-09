@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import dfmareu.com.R;
+import dfmareu.com.api.DeleteListener;
 import dfmareu.com.base.BaseActivity;
 import dfmareu.com.databinding.ActivityMainBinding;
 import dfmareu.com.databinding.ActivityMainItemBinding;
@@ -26,7 +27,7 @@ import dfmareu.com.models.Reunion;
 import dfmareu.com.repository.ReunionRepository;
 import dfmareu.com.ui.create.CreateReunion;
 
-public class MainActivity extends BaseActivity implements MainActivityAdapter.Listener {
+public class MainActivity extends BaseActivity implements DeleteListener {
 
     //Keys for bundles
     public final static String NAVIGATIONparticipants = "dfmareu.com.Views.NAVIGATIONparticipants";

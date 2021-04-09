@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Arrays;
 
+import dfmareu.com.api.DeleteListener;
 import dfmareu.com.databinding.ActivityMainItemBinding;
 import dfmareu.com.models.Reunion;
 import dfmareu.com.util.ColorChip;
@@ -20,7 +21,7 @@ public class MainActivityViewHolder extends RecyclerView.ViewHolder {
         this.itemBinding = activityMainItemBinding;
     }
 
-    public void bindView(Reunion reunion, MainActivityAdapter.Listener callback){
+    public void bindView(Reunion reunion, DeleteListener callback){
         this.reunion = reunion;
         itemBinding.activityMainItemRoom.setText(reunion.getRoom());
         itemBinding.activityMainItemHour.setText(reunion.getHours());
