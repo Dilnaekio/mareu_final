@@ -45,7 +45,7 @@ public class CreateReunion extends BaseActivity {
     //Date/TimePickerDialog and var used for calendar
     DatePickerDialog date;
     TimePickerDialog time;
-    int day, month, year;
+    int day;
 
     //RecyclerView guests list
     RecyclerView vGuestRecyclerView;
@@ -156,7 +156,6 @@ public class CreateReunion extends BaseActivity {
                 ReunionInformations.putStringArrayList(NAVIGATIONparticipants, mParticipantsList);
                 ReunionInformations.putString(NAVIGATIONsubject, subject);
                 ReunionInformations.putString(NAVIGATIONroom, spinner);
-                //todo : je vais modifier l'envoie de date pour envoyer un string à la place => il faudra modifier Reunion + test
                 ReunionInformations.putString(NAVIGATIONdate, (String) mChosenDate.getText());
                 ReunionInformations.putString(NAVIGATIONtime, hour);
                 sendInfos.putExtra(NAVIGATIONbundle, ReunionInformations);
