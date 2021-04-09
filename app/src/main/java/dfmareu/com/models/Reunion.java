@@ -18,11 +18,11 @@ public class Reunion {
         this.room = room;
     }
 
-    public String getChosenDay(){
+    public String getChosenDay() {
         return day;
     }
 
-    public String[] getParticipants(){
+    public String[] getParticipants() {
         return reunionUsers.toArray(new String[0]);
     }
 

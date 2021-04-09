@@ -139,7 +139,7 @@ public class InstrumentedTestP4 {
         onView(withId(R.id.action_search))
                 .perform(click());
         onView(withId(R.id.search_src_text))
-                .perform(typeText("25"));
+                .perform(typeText("29/4/2021"));
         onView(withId(R.id.activity_main_recycler_view))
                 .perform(RecyclerViewActions.scrollTo(hasDescendant(withText("Salle E"))));
     }

@@ -16,9 +16,10 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityViewHo
 
     private final DeleteListener callback;
     final ArrayList<Reunion> mReunions;
+
     public MainActivityAdapter(ArrayList<Reunion> reunions, DeleteListener callback) {
         this.mReunions = reunions;
-        this.callback= callback;
+        this.callback = callback;
     }
 
     @NonNull

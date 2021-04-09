@@ -1,7 +1,6 @@
 package dfmareu.com.ui.main;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -11,7 +10,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -65,7 +63,7 @@ public class MainActivity extends BaseActivity implements DeleteListener {
                 assert data != null;
                 mReunion = data.getBundleExtra(CreateReunion.NAVIGATIONbundle);
                 mDay = mReunion.getString(NAVIGATIONdate);
-                Log.i("MainActivityFile","Day : " + mDay);
+                Log.i("MainActivityFile", "Day : " + mDay);
                 mHour = mReunion.getString(NAVIGATIONtime);
                 mRoom = mReunion.getString(NAVIGATIONroom);
                 mSubject = mReunion.getString(NAVIGATIONsubject);
@@ -181,14 +179,14 @@ public class MainActivity extends BaseActivity implements DeleteListener {
         mainActivityAdapter.notifyDataSetChanged();
     }
 
-    //If the screen orientation change, reset the data from the array into the recyclerview
-    @Override
-    public void onConfigurationChanged(@NonNull Configuration configuration) {
-        super.onConfigurationChanged(configuration);
-        int size = reunionRepository.getReunions().size();
-        if (size > 0) {
-            reunionRepository.getReunions().subList(0, size).clear();
-        }
-    }
+//    //If the screen orientation change, reset the data from the array into the recyclerview
+//    @Override
+//    public void onConfigurationChanged(@NonNull Configuration configuration) {
+//        super.onConfigurationChanged(configuration);
+//        int size = reunionRepository.getReunions().size();
+//        if (size > 0) {
+//            reunionRepository.getReunions().subList(0, size).clear();
+//        }
+//    }
 }
 
