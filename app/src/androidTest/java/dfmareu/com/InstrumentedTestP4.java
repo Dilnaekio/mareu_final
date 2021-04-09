@@ -58,7 +58,7 @@ public class InstrumentedTestP4 {
 
         int index = 0;
         ArrayList<Reunion> fakeReunions = FakeApiServiceGenerator.FakeReunions;
-        while(index < fakeReunions.size()){
+        while (index < fakeReunions.size()) {
             reunionRepository.addReunion(fakeReunions.get(index));
             index++;
         }
