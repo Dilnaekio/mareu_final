@@ -8,9 +8,9 @@ import dfmareu.com.models.Reunion;
 public abstract class FakeApiServiceGenerator {
 
     public static final ArrayList<String> FakeUsersList = new ArrayList<String>() {{
-        add("Fabian");
-        add("Lolita");
-        add("Charles");
+        add("delcourtfabian@gmail.com");
+        add("beranger.nynga@gmail.com");
+        add("ludovic.c.roland@gmail.com");
     }};
     public static final ArrayList<Reunion> FakeReunions = new ArrayList<>(Arrays.asList(
             new Reunion(FakeUsersList, "Les crocodiles", "Salle A", "25/4/2021", "10h00"),

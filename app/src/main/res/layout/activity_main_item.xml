@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:orientation="horizontal"
         tools:ignore="UselessParent">
 
@@ -20,9 +20,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_weight="1"
+            android:layout_weight="1.2"
             android:contentDescription="@string/ic_description"
-            android:padding="5dp"
+            android:paddingStart="1dp"
+            android:paddingEnd="0.5dp"
             android:src="@drawable/pastille_10" />
 
         <LinearLayout
@@ -63,7 +64,7 @@
                     android:textStyle="bold"/>
 
                 <TextView
-                    android:id="@+id/activity_main_item_hour"
+                    android:id="@+id/activity_main_item_day_hour"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -116,7 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_weight="1"
+            android:layout_weight="1.2"
             android:backgroundTint="@color/white"
             android:contentDescription="@string/ic_delete_btn"
             android:gravity="center"

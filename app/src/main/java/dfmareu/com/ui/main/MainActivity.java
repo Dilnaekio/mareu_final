@@ -34,20 +34,23 @@ public class MainActivity extends BaseActivity implements DeleteListener {
     public final static String NAVIGATIONroom = "dfmareu.com.Views.NAVIGATIONroom";
     public final static String NAVIGATIONdate = "dfmareu.com.Views.NAVIGATIONdate";
     public final static String NAVIGATIONtime = "dfmareu.com.Views.NAVIGATIONtime";
+
     //Requests codes
     private static final int CREATE_REUNION_ACTIVITY_REQUEST_CODE = 42;
+
     //Items
     public TextView mItemRoom, mItemHour, mItemParticipants, mItemSubject;
     public ImageButton mItemGarbage;
-    //Var for bundles informations about the reunion created
-    public int mMonth, mYear;
     public String mHour, mRoom, mSubject, mDay;
     public Bundle mReunion;
     public ArrayList<String> mParticipants = new ArrayList<>();
+
     //Adapter
     MainActivityAdapter mainActivityAdapter;
+
     //RecyclerView
     RecyclerView mainActivityRecyclerView;
+
     //Views
     ActivityMainBinding binding;
     ActivityMainItemBinding itemBinding;
@@ -99,7 +102,7 @@ public class MainActivity extends BaseActivity implements DeleteListener {
         setSupportActionBar(binding.toolbar);
 
         itemBinding = ActivityMainItemBinding.inflate(getLayoutInflater());
-        mItemHour = itemBinding.activityMainItemHour;
+        mItemHour = itemBinding.activityMainItemDayHour;
         mItemRoom = itemBinding.activityMainItemRoom;
         mItemSubject = itemBinding.activityMainItemSubject;
         mItemParticipants = itemBinding.activityMainParticipants;
@@ -130,7 +133,7 @@ public class MainActivity extends BaseActivity implements DeleteListener {
         getMenuInflater().inflate(R.menu.main_menu, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) searchItem.getActionView();
-        searchView.setQueryHint("Ex: Salle A Ex : 25/4/2021, ...");
+        searchView.setQueryHint("Ex: Salle A, 25/4/2021, ...");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {

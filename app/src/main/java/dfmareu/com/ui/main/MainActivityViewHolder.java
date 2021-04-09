@@ -1,6 +1,8 @@
 package dfmareu.com.ui.main;
 
 
+import android.annotation.SuppressLint;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,10 +23,11 @@ public class MainActivityViewHolder extends RecyclerView.ViewHolder {
         this.itemBinding = activityMainItemBinding;
     }
 
+    @SuppressLint("SetTextI18n")
     public void bindView(Reunion reunion, DeleteListener callback) {
         this.reunion = reunion;
         itemBinding.activityMainItemRoom.setText(reunion.getRoom());
-        itemBinding.activityMainItemHour.setText(reunion.getHours());
+        itemBinding.activityMainItemDayHour.setText(reunion.getChosenDay() + " - " + reunion.getHours());
         itemBinding.activityMainItemSubject.setText(reunion.getSubject());
         itemBinding.activityMainParticipants.setText(Arrays.toString(reunion.getParticipants()).replaceAll("[\\[\\]]", ""));
         itemBinding.activityMainItemGarbage.setOnClickListener(view -> callback.onClickDelete(reunion));
