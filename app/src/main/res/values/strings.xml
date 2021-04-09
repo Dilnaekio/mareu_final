@@ -31,8 +31,8 @@
 
     <!-- No data strings -->
     <string name="No_Room_Number">No room</string>
-    <string name="No_Subject_Data">No subject data</string>
-    <string name="No_Time_Data">No time data</string>
+    <string name="No_Subject_Data">No subject</string>
+    <string name="No_Time_Data">No time</string>
     <string name="No_Participants_Data">Personne n\'est encore invité !</string>
     <string name="No_Date_Selected">Aucune date n\'a été choisie</string>
     <string name="No_Time_Selected">Aucune heure n\'a été choisie</string>
