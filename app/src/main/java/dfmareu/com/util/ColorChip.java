@@ -1,22 +1,9 @@
 package dfmareu.com.util;
 
-import android.util.Patterns;
-
 import dfmareu.com.R;
-import dfmareu.com.databinding.ActivityMainItemBinding;
 import dfmareu.com.models.Reunion;
 
-public class ReunionUtil {
-
-    ActivityMainItemBinding activityMainItemBinding;
-
-    public static boolean isMailValid(String email) {
-        if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            return Patterns.EMAIL_ADDRESS.matcher(email).matches();
-        } else {
-            return false;
-        }
-    }
+public class ColorChip {
 
     public static int setColorChip(Reunion reunion){
        String roomLetter = reunion.getRoom();

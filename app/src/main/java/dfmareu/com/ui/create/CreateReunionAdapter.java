@@ -6,14 +6,14 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import dfmareu.com.databinding.ActivityCreateReunionItemBinding;
 
 public class CreateReunionAdapter extends RecyclerView.Adapter<CreateReunionViewHolder> {
-    final List<String> mParticipantsList;
+    final ArrayList<String> mParticipantsList;
 
-    public CreateReunionAdapter(List<String> mParticipantsList) {
+    public CreateReunionAdapter(ArrayList<String> mParticipantsList) {
         this.mParticipantsList = mParticipantsList;
     }
 

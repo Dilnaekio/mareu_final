@@ -1,9 +1,6 @@
 package dfmareu.com.models;
 
 import java.util.ArrayList;
-import java.util.Random;
-
-import static dfmareu.com.api.FakeApiServiceGenerator.FakeReunions;
 
 public class Reunion {
 
@@ -23,10 +20,6 @@ public class Reunion {
         this.year = year;
         this.hours = hours;
         this.room = room;
-    }
-
-    public static Reunion addRandomFakeReunion(){
-        return FakeReunions.get(new Random().nextInt(FakeReunions.size()));
     }
 
     public String getChosenDay(){

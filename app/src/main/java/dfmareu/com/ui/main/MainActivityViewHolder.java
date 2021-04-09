@@ -6,28 +6,29 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Arrays;
 
+import dfmareu.com.api.DeleteListener;
 import dfmareu.com.databinding.ActivityMainItemBinding;
 import dfmareu.com.models.Reunion;
-import dfmareu.com.util.ReunionUtil;
+import dfmareu.com.util.ColorChip;
 
 public class MainActivityViewHolder extends RecyclerView.ViewHolder {
 
-    final ActivityMainItemBinding activityMainItemBinding;
+    final ActivityMainItemBinding itemBinding;
     Reunion reunion;
 
     public MainActivityViewHolder(@NonNull ActivityMainItemBinding activityMainItemBinding) {
         super(activityMainItemBinding.getRoot());
-        this.activityMainItemBinding = activityMainItemBinding;
+        this.itemBinding = activityMainItemBinding;
     }
 
-    public void bindView(Reunion reunion, MainActivityAdapter.Listener callback){
+    public void bindView(Reunion reunion, DeleteListener callback){
         this.reunion = reunion;
-        activityMainItemBinding.activityMainItemRoom.setText(reunion.getRoom());
-        activityMainItemBinding.activityMainItemHour.setText(reunion.getHours());
-        activityMainItemBinding.activityMainItemSubject.setText(reunion.getSubject());
-        activityMainItemBinding.activityMainParticipants.setText(Arrays.toString(reunion.getParticipants()).replaceAll("[\\[\\]]",""));
-        activityMainItemBinding.activityMainItemGarbage.setOnClickListener(view -> callback.onClickDelete(reunion));
-        int color = ReunionUtil.setColorChip(reunion);
-        activityMainItemBinding.activityMainItemImageChip.setImageResource(color);
+        itemBinding.activityMainItemRoom.setText(reunion.getRoom());
+        itemBinding.activityMainItemHour.setText(reunion.getHours());
+        itemBinding.activityMainItemSubject.setText(reunion.getSubject());
+        itemBinding.activityMainParticipants.setText(Arrays.toString(reunion.getParticipants()).replaceAll("[\\[\\]]",""));
+        itemBinding.activityMainItemGarbage.setOnClickListener(view -> callback.onClickDelete(reunion));
+        int color = ColorChip.setColorChip(reunion);
+        itemBinding.activityMainItemImageChip.setImageResource(color);
     }
 }

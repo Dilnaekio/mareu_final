@@ -8,14 +8,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import dfmareu.com.api.DeleteListener;
 import dfmareu.com.databinding.ActivityMainItemBinding;
 import dfmareu.com.models.Reunion;
 
-public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityViewHolder> {
+public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityViewHolder> implements DeleteListener {
 
-    private final Listener callback;
+    private final DeleteListener callback;
     final ArrayList<Reunion> mReunions;
-    public MainActivityAdapter(ArrayList<Reunion> reunions, Listener callback) {
+    public MainActivityAdapter(ArrayList<Reunion> reunions, DeleteListener callback) {
         this.mReunions = reunions;
         this.callback= callback;
     }
@@ -38,7 +39,8 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityViewHo
         return mReunions.size();
     }
 
-    public interface Listener {
-        void onClickDelete(Reunion reunion);
+    @Override
+    public void onClickDelete(Reunion reunion) {
+
     }
 }
