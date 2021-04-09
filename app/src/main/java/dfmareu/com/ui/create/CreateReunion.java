@@ -37,9 +37,7 @@ public class CreateReunion extends BaseActivity {
     public static final String NAVIGATIONparticipants = "dfmareu.com.Views.NAVIGATIONparticipants";
     public static final String NAVIGATIONsubject = "dfmareu.com.Views.NAVIGATIONsubject";
     public static final String NAVIGATIONroom = "dfmareu.com.Views.NAVIGATIONroom";
-    public static final String NAVIGATIONday = "dfmareu.com.Views.NAVIGATIONday";
-    public static final String NAVIGATIONmonth = "dfmareu.com.Views.NAVIGATIONmonth";
-    public static final String NAVIGATIONyear = "dfmareu.com.Views.NAVIGATIONyear";
+    public static final String NAVIGATIONdate = "dfmareu.com.Views.NAVIGATIONdate";
     public static final String NAVIGATIONtime = "dfmareu.com.Views.NAVIGATIONtime";
     public static final String NAVIGATIONbundle = "dfmareu.com.Views.NAVIGATIONbundle";
 
@@ -160,9 +158,8 @@ public class CreateReunion extends BaseActivity {
                 ReunionInformations.putStringArrayList(NAVIGATIONparticipants, mParticipantsList);
                 ReunionInformations.putString(NAVIGATIONsubject, subject);
                 ReunionInformations.putString(NAVIGATIONroom, spinner);
-                ReunionInformations.putInt(NAVIGATIONday, day);
-                ReunionInformations.putInt(NAVIGATIONmonth, month);
-                ReunionInformations.putInt(NAVIGATIONyear, year);
+                //todo : je vais modifier l'envoie de date pour envoyer un string à la place => il faudra modifier Reunion + test
+                ReunionInformations.putString(NAVIGATIONdate, (String) mChosenDate.getText());
                 ReunionInformations.putString(NAVIGATIONtime, hour);
                 sendInfos.putExtra(NAVIGATIONbundle, ReunionInformations);
                 setResult(Activity.RESULT_OK, sendInfos);

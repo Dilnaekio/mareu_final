@@ -6,24 +6,20 @@ public class Reunion {
 
     private final ArrayList<String> reunionUsers;
     private final String subject;
-    private final int day;
-    private final int month;
-    private final int year;
+    private final String day;
     private final String hours;
     private final String room;
 
-    public Reunion(ArrayList<String> reunionUsers, String subject, String room, int day, int month, int year, String hours) {
+    public Reunion(ArrayList<String> reunionUsers, String subject, String room, String day, String hours) {
         this.reunionUsers = reunionUsers;
         this.subject = subject;
         this.day = day;
-        this.month = month;
-        this.year = year;
         this.hours = hours;
         this.room = room;
     }
 
     public String getChosenDay(){
-        return day + "/" + month + "/" + year;
+        return day;
     }
 
     public String[] getParticipants(){

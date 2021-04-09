@@ -3,6 +3,7 @@ package dfmareu.com.ui.main;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,9 +34,7 @@ public class MainActivity extends BaseActivity implements DeleteListener {
     public final static String NAVIGATIONparticipants = "dfmareu.com.Views.NAVIGATIONparticipants";
     public final static String NAVIGATIONsubject = "dfmareu.com.Views.NAVIGATIONsubject";
     public final static String NAVIGATIONroom = "dfmareu.com.Views.NAVIGATIONroom";
-    public final static String NAVIGATIONday = "dfmareu.com.Views.NAVIGATIONday";
-    public final static String NAVIGATIONmonth = "dfmareu.com.Views.NAVIGATIONmonth";
-    public final static String NAVIGATIONyear = "dfmareu.com.Views.NAVIGATIONyear";
+    public final static String NAVIGATIONdate = "dfmareu.com.Views.NAVIGATIONdate";
     public final static String NAVIGATIONtime = "dfmareu.com.Views.NAVIGATIONtime";
     //Requests codes
     private static final int CREATE_REUNION_ACTIVITY_REQUEST_CODE = 42;
@@ -43,8 +42,8 @@ public class MainActivity extends BaseActivity implements DeleteListener {
     public TextView mItemRoom, mItemHour, mItemParticipants, mItemSubject;
     public ImageButton mItemGarbage;
     //Var for bundles informations about the reunion created
-    public int mDay, mMonth, mYear;
-    public String mHour, mRoom, mSubject;
+    public int mMonth, mYear;
+    public String mHour, mRoom, mSubject, mDay;
     public Bundle mReunion;
     public ArrayList<String> mParticipants = new ArrayList<>();
     //Adapter
@@ -65,15 +64,15 @@ public class MainActivity extends BaseActivity implements DeleteListener {
             try {
                 assert data != null;
                 mReunion = data.getBundleExtra(CreateReunion.NAVIGATIONbundle);
-                mDay = mReunion.getInt(NAVIGATIONday);
-                mMonth = mReunion.getInt(NAVIGATIONmonth);
-                mYear = mReunion.getInt(NAVIGATIONyear);
+                mDay = mReunion.getString(NAVIGATIONdate);
+                Log.i("MainActivityFile","Day : " + mDay);
                 mHour = mReunion.getString(NAVIGATIONtime);
                 mRoom = mReunion.getString(NAVIGATIONroom);
                 mSubject = mReunion.getString(NAVIGATIONsubject);
                 mParticipants = mReunion.getStringArrayList(NAVIGATIONparticipants);
 
-                Reunion reunion = new Reunion(mParticipants, mSubject, mRoom, mDay, mMonth, mYear, mHour);
+
+                Reunion reunion = new Reunion(mParticipants, mSubject, mRoom, mDay, mHour);
                 reunionRepository.addReunion(reunion);
                 mainActivityAdapter.notifyDataSetChanged();
 
@@ -133,7 +132,7 @@ public class MainActivity extends BaseActivity implements DeleteListener {
         getMenuInflater().inflate(R.menu.main_menu, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) searchItem.getActionView();
-        searchView.setQueryHint("Ex: Salle A Ex : 25, ...");
+        searchView.setQueryHint("Ex: Salle A Ex : 25/4/2021, ...");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -162,7 +161,7 @@ public class MainActivity extends BaseActivity implements DeleteListener {
                             mainActivityAdapter = new MainActivityAdapter(reunionRepository.getReunions(), MainActivity.this);
                             searchView.setQuery("", false);
                             searchView.clearFocus();
-                            Toast toast = Toast.makeText(getApplicationContext(), "Invalid character. You must search Salle A to J or day number 1 to 31)", Toast.LENGTH_LONG);
+                            Toast toast = Toast.makeText(getApplicationContext(), "No reunion found or invalid character. You must search Salle A to J or day/month/year ex : 21/9/1991)", Toast.LENGTH_LONG);
                             toast.show();
                         }
                     }

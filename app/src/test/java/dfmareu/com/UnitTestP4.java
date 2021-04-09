@@ -25,15 +25,14 @@ public class UnitTestP4 {
     @Before
     public void setUp(){
         reunionRepository = Injection.createReunionRepository();
-        reunionTest = new Reunion (FakeUsersList, "Sujet", "Salle Test", 999, 3, 2021, "18h00");
+        reunionTest = new Reunion (FakeUsersList, "Sujet", "Salle Test", "01/1/2000", "18h00");
     }
 
     @Test
     public void getReunions(){
         ArrayList<Reunion> realReunions = reunionRepository.getReunions();
-        ArrayList<Reunion> fakeReunions = FakeReunions;
 
-        assertEquals(fakeReunions.size(), realReunions.size());
+        assertEquals(FakeReunions.size(), realReunions.size());
     }
 
     @Test
@@ -45,6 +44,7 @@ public class UnitTestP4 {
 
     @Test
     public void deleteReunion(){
+        reunionRepository.addReunion(reunionTest);
         Reunion reunionToDelete = reunionRepository.getReunions().get(0);
         reunionRepository.deleteReunion(reunionToDelete);
 
@@ -54,7 +54,7 @@ public class UnitTestP4 {
     @Test
     public void filteredDateReunion(){
     reunionRepository.addReunion(reunionTest);
-    filterPattern = "999";
+    filterPattern = "01/1/2000";
     filteredList = reunionRepository.getFilteredDate(filterPattern);
     filteredReunion = filteredList.get(0);
 
