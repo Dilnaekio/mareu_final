@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.text.Editable;
@@ -18,7 +17,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -37,9 +35,7 @@ public class CreateReunion extends BaseActivity {
     public static final String NAVIGATIONparticipants = "dfmareu.com.Views.NAVIGATIONparticipants";
     public static final String NAVIGATIONsubject = "dfmareu.com.Views.NAVIGATIONsubject";
     public static final String NAVIGATIONroom = "dfmareu.com.Views.NAVIGATIONroom";
-    public static final String NAVIGATIONday = "dfmareu.com.Views.NAVIGATIONday";
-    public static final String NAVIGATIONmonth = "dfmareu.com.Views.NAVIGATIONmonth";
-    public static final String NAVIGATIONyear = "dfmareu.com.Views.NAVIGATIONyear";
+    public static final String NAVIGATIONdate = "dfmareu.com.Views.NAVIGATIONdate";
     public static final String NAVIGATIONtime = "dfmareu.com.Views.NAVIGATIONtime";
     public static final String NAVIGATIONbundle = "dfmareu.com.Views.NAVIGATIONbundle";
 
@@ -49,7 +45,7 @@ public class CreateReunion extends BaseActivity {
     //Date/TimePickerDialog and var used for calendar
     DatePickerDialog date;
     TimePickerDialog time;
-    int day, month, year;
+    int day;
 
     //RecyclerView guests list
     RecyclerView vGuestRecyclerView;
@@ -160,22 +156,20 @@ public class CreateReunion extends BaseActivity {
                 ReunionInformations.putStringArrayList(NAVIGATIONparticipants, mParticipantsList);
                 ReunionInformations.putString(NAVIGATIONsubject, subject);
                 ReunionInformations.putString(NAVIGATIONroom, spinner);
-                ReunionInformations.putInt(NAVIGATIONday, day);
-                ReunionInformations.putInt(NAVIGATIONmonth, month);
-                ReunionInformations.putInt(NAVIGATIONyear, year);
+                ReunionInformations.putString(NAVIGATIONdate, (String) mChosenDate.getText());
                 ReunionInformations.putString(NAVIGATIONtime, hour);
                 sendInfos.putExtra(NAVIGATIONbundle, ReunionInformations);
                 setResult(Activity.RESULT_OK, sendInfos);
                 finish();
             } else {
                 //If the informations are empty => set hint/text to red.
-                if(checkReunionInformations.getNotHourEmpty()){
+                if (checkReunionInformations.getNotHourEmpty()) {
                     mChosenTime.setTextColor(redColor);
                 }
-                if(checkReunionInformations.getNotParticipantsEmpty()){
+                if (checkReunionInformations.getNotParticipantsEmpty()) {
                     mParticipants.setHintTextColor(redColor);
                 }
-                if(checkReunionInformations.getNotSubjectEmpty()){
+                if (checkReunionInformations.getNotSubjectEmpty()) {
                     mSubject.setHintTextColor(redColor);
                 }
             }
@@ -218,20 +212,20 @@ public class CreateReunion extends BaseActivity {
     }
 
     //If we must disabled "portrait" in the manifest, we already have this onConfigurationChanged method set up to clean data
-    @Override
-    public void onConfigurationChanged(@NonNull Configuration configuration) {
-        super.onConfigurationChanged(configuration);
-        vSpinnerRooms.setSelection(0);
-        mSubject.setText("");
-        mChosenDate.setText(R.string.No_Date_Selected);
-        mChosenTime.setText(R.string.No_Time_Selected);
-        int size = mParticipantsList.size();
-        if (size > 0) {
-            mParticipantsList.subList(0, size).clear();
-            if (mParticipantsList.isEmpty()) {
-                vGuestRecyclerView.setVisibility(View.GONE);
-                mEmptyRecycler.setVisibility(View.VISIBLE);
-            }
-        }
-    }
+//    @Override
+//    public void onConfigurationChanged(@NonNull Configuration configuration) {
+//        super.onConfigurationChanged(configuration);
+//        vSpinnerRooms.setSelection(0);
+//        mSubject.setText("");
+//        mChosenDate.setText(R.string.No_Date_Selected);
+//        mChosenTime.setText(R.string.No_Time_Selected);
+//        int size = mParticipantsList.size();
+//        if (size > 0) {
+//            mParticipantsList.subList(0, size).clear();
+//            if (mParticipantsList.isEmpty()) {
+//                vGuestRecyclerView.setVisibility(View.GONE);
+//                mEmptyRecycler.setVisibility(View.VISIBLE);
+//            }
+//        }
+//    }
 }

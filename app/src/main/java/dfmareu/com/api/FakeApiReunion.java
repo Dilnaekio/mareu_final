@@ -7,8 +7,9 @@ import dfmareu.com.models.Reunion;
 import static dfmareu.com.api.FakeApiServiceGenerator.generateReunion;
 
 
-public class FakeApiReunion implements ApiReunion{
+public class FakeApiReunion implements ApiReunion {
 
+    //To test with fake list
     private final ArrayList<Reunion> reunions = generateReunion();
 
     public FakeApiReunion() {
@@ -23,8 +24,8 @@ public class FakeApiReunion implements ApiReunion{
     public ArrayList<Reunion> getFilteredDate(String day) {
         ArrayList<Reunion> filteredDate = new ArrayList<>();
         String filterPattern = day.toLowerCase().trim();
-        for(Reunion reunion : reunions){
-            if(reunion.getChosenDay().toLowerCase().contains(filterPattern)){
+        for (Reunion reunion : reunions) {
+            if (reunion.getChosenDay().toLowerCase().contains(filterPattern)) {
                 filteredDate.add(reunion);
             }
         }
@@ -45,11 +46,11 @@ public class FakeApiReunion implements ApiReunion{
 
     @Override
     public void addReunion(Reunion reunion) {
-    reunions.add(reunion);
+        reunions.add(reunion);
     }
 
     @Override
     public void deleteReunion(Reunion reunion) {
-    reunions.remove(reunion);
+        reunions.remove(reunion);
     }
 }

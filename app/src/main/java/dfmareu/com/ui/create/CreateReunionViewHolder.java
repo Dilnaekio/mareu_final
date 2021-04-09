@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import dfmareu.com.databinding.ActivityCreateReunionItemBinding;
 
-public class CreateReunionViewHolder extends RecyclerView.ViewHolder{
+public class CreateReunionViewHolder extends RecyclerView.ViewHolder {
 
     final ActivityCreateReunionItemBinding reunionItemBinding;
 
