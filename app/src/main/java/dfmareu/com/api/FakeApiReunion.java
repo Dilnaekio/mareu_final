@@ -9,7 +9,7 @@ public class FakeApiReunion implements ApiReunion{
 
     private final ArrayList<Reunion> reunions = new ArrayList<>();
     //To test with fake list
-    // private final ArrayList<Reunion> reunions = FakeReunions;
+    //private final ArrayList<Reunion> reunions = generateReunion();
 
     public FakeApiReunion() {
     }
