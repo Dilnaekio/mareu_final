@@ -61,7 +61,7 @@
                     android:gravity="center"
                     android:text="@string/Reunion_Tiret_TxtView"
                     android:textColor="@color/black"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/activity_main_item_day_hour"
@@ -73,7 +73,7 @@
                     android:text="@string/No_Time_Data"
                     android:textColor="@color/black"
                     android:textSize="12sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -83,7 +83,7 @@
                     android:gravity="center"
                     android:text="@string/Reunion_Tiret_TxtView"
                     android:textColor="@color/black"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/activity_main_item_Subject"
@@ -96,19 +96,24 @@
                     android:text="@string/No_Subject_Data"
                     android:textColor="@color/black"
                     android:textSize="12sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/activity_main_participants"
+            <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:text="@string/No_Participants_Data"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/activity_main_participants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/No_Participants_Data"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </HorizontalScrollView>
 
         </LinearLayout>
 
