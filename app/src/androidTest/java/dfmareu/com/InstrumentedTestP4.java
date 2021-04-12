@@ -94,7 +94,7 @@ public class InstrumentedTestP4 {
                 .perform(PickerActions.setDate(2021, 4, 15));
         onView(withText("OK")).perform(click());
         onView(withId(R.id.activity_create_reunion_SelectedDate))
-                .check(matches(withText("15/4/2021")));
+                .check(matches(withText("15/04/2021")));
 
         //TEST FOR TIME SELECTION
         onView(withId(R.id.activity_create_reunion_TimeBtn))
@@ -103,7 +103,7 @@ public class InstrumentedTestP4 {
                 .perform(PickerActions.setTime(15, 15));
         onView(withText("OK")).perform(click());
         onView(withId(R.id.activity_create_reunion_SelectedTime))
-                .check(matches(withText("15:15")));
+                .check(matches(withText("15h15")));
 
         //RETURN ON THE MAIN ACTIVITY
         onView(withId(R.id.fabValidate))
@@ -139,7 +139,7 @@ public class InstrumentedTestP4 {
         onView(withId(R.id.action_search))
                 .perform(click());
         onView(withId(R.id.search_src_text))
-                .perform(typeText("29/4/2021"));
+                .perform(typeText("29/04/2021"));
         onView(withId(R.id.activity_main_recycler_view))
                 .perform(RecyclerViewActions.scrollTo(hasDescendant(withText("Salle E"))));
     }
