@@ -124,7 +124,7 @@ public class CreateReunion extends BaseActivity {
             int month = calendar.get(Calendar.MONTH);
             int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
 
-            date = new DatePickerDialog(CreateReunion.this, (view1, year1, month1, day) -> mChosenDate.setText(getString(R.string.chosen_date, day, (month1 + 1), year1)), year, month, dayOfMonth);
+            date = new DatePickerDialog(CreateReunion.this, (view1, year1, month1, day) -> mChosenDate.setText(format(Locale.getDefault(),"%02d/%02d/%02d", day, (month1 + 1), year1)), year, month, dayOfMonth);
             date.show();
         });
 
@@ -133,7 +133,7 @@ public class CreateReunion extends BaseActivity {
             int hour = calendar.get(Calendar.HOUR_OF_DAY);
             int min = calendar.get(Calendar.MINUTE);
 
-            time = new TimePickerDialog(CreateReunion.this, (view12, hourOfDay, minute) -> mChosenTime.setText(format(Locale.getDefault(), "%02d:%02d", hourOfDay, minute)), hour, min, true);
+            time = new TimePickerDialog(CreateReunion.this, (view12, hourOfDay, minute) -> mChosenTime.setText(format(Locale.getDefault(), "%02dh%02d", hourOfDay, minute)), hour, min, true);
             time.show();
         });
 

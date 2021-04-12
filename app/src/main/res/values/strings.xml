@@ -11,10 +11,6 @@
     <string name="toolbar_main_menu">Ma réu</string>
     <string name="toolbar_add_reunion">Nouvelle réunion</string>
 
-    <!-- Date and Time description -->
-    <string name="chosen_date">%1$d/%2$d/%3$d</string>
-    <string name="chosen_hour">%01$d:%02$d</string>
-
     <!-- String Arrays -->
     <string-array name="ReunionRooms">
         <item>Salle A</item>
