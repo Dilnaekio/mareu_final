@@ -44,13 +44,23 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a60ae9b8-c8ab-43e4-82d7-cd81e1b6160e" name="Default Changelist" comment="Ajout de fichiers manquants" />
+    <list default="true" id="a60ae9b8-c8ab-43e4-82d7-cd81e1b6160e" name="Default Changelist" comment="Ajout de fichiers manquants">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Maréu.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Maréu.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
   <component name="ExportTestResults" outputFolder="$USER_HOME$/OneDrive/Bureau" openResultsInEditor="true" userTempatePath="" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -128,8 +138,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="HA14XBLW" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-12T13:50:02.515Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30_x86" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-12T21:26:21.242Z" />
     <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -998,21 +1008,21 @@
     </state>
     <state width="1491" height="76" key="GridCell.Tab.1.right/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617047556067" />
     <state width="1491" height="76" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617458928071" />
-    <state x="349" y="155" key="IDE.errors.dialog" timestamp="1617570399915">
+    <state x="349" y="155" key="IDE.errors.dialog" timestamp="1618262626128">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="155" key="IDE.errors.dialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617114661886" />
-    <state x="349" y="155" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1617570399915" />
+    <state x="349" y="155" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1618262626128" />
     <state x="259" y="65" key="MergeDialog" timestamp="1617571530518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="259" y="65" key="MergeDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617116962334" />
     <state x="259" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1617571530518" />
-    <state x="407" y="174" width="1062" height="476" key="MultipleFileMergeDialog" timestamp="1617978226749">
+    <state x="407" y="174" width="1062" height="476" key="MultipleFileMergeDialog" timestamp="1618262520814">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="407" y="174" width="945" height="476" key="MultipleFileMergeDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617112219712" />
-    <state x="407" y="174" width="1062" height="476" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1617978226749" />
+    <state x="407" y="174" width="1062" height="476" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1618262520814" />
     <state x="519" y="115" key="RollbackChangesDialog" timestamp="1617571085097">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -1035,11 +1045,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="449" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1617453386848" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1618261925354">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1618262597179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617268602310" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618261925354" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618262597179" />
     <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1617630293176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -1162,22 +1172,5 @@
         <watch expression="this" language="JAVA" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Maréu$CreateReunionUnitTest_checkIfMailValid.ic" NAME="CreateReunionUnitTest.checkIfMailValid Coverage Results" MODIFIED="1615468303915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>DFmareu.com.Views.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Maréu$ReunionTest_CheckUsers.ic" NAME="ReunionTest.CheckUsers Coverage Results" MODIFIED="1615480087262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>DFmareu.com.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Maréu$CreateReunionUnitTest.ic" NAME="CreateReunionUnitTest Coverage Results" MODIFIED="1615471021514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>DFmareu.com.Views.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Maréu$ReunionTest.ic" NAME="ReunionTest Coverage Results" MODIFIED="1615480176606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>DFmareu.com.Util.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Maréu$ReunionTest_AddReunionToTheList.ic" NAME="ReunionTest.AddReunionToTheList Coverage Results" MODIFIED="1615480148825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>DFmareu.com.*</FILTER>
-    </SUITE>
   </component>
 </project>
