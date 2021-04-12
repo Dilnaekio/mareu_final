@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SPLITTER_PROPORTION" value="0.28432056" />
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_3" />
+        <device id="Nexus 7" />
+        <device id="Nexus 5X" />
+        <device id="pixel" />
+        <device id="tv_1080p" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="MainActivityFile" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:Optimization" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a60ae9b8-c8ab-43e4-82d7-cd81e1b6160e" name="Default Changelist" comment="Ajout de fichiers manquants" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExportTestResults" outputFolder="$USER_HOME$/OneDrive/Bureau" openResultsInEditor="true" userTempatePath="" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Maréu" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Maréu" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Maréu" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="install" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="resourceFile" />
+        <option value="JUnit4 Test Class" />
+        <option value="valueResourceFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="ProjectId" id="1o0jpTzdhbhvavvVJ6SdvSOLuzi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="HA14XBLW" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-12T13:50:02.515Z" />
+    <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SelectDeploymentTargetsDialog.selectedDevices" value="FBNPFX109540&#10;Pixel_3a_API_30_x86&#10;Pixel_3a_XL_API_21" />
+    <property name="android-custom-viewC:/Users/delco/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
+    <property name="android-custom-viewC:/Users/delco/AppData/Local/Android/Sdk/sources/android-30/android/widget/ImageButton.java_SELECTED" value="ImageButton" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java/dfmareu/com" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/Projet_Analysez_les_tests_dune_application/MagicGithub" />
+    <property name="multi-representation-previewC:/Users/delco/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/delco/AppData/Local/Android/Sdk/sources/android-30/android/widget/ImageButton.java_selected" value="Custom views" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="BUILD_VARIANTS_TAB" value="Build Types" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="DFmareu.com.Views" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="android.template.1354794010">
+      <recent name="DFmareu.com.Activities" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\delco\AndroidStudioProjects\Mareu\app\src\main\res\drawable-v24" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="DFmareu.com.Models" />
+      <recent name="DFmareu.com" />
+      <recent name="Util" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dfmareu.com.api" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="UnitTestP4" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Maréu.app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dfmareu.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dfmareu.com" />
+      <option name="MAIN_CLASS_NAME" value="dfmareu.com.UnitTestP4" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTestP4.filteredDateReunion" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Maréu.app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dfmareu.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dfmareu.com" />
+      <option name="MAIN_CLASS_NAME" value="dfmareu.com.UnitTestP4" />
+      <option name="METHOD_NAME" value="filteredDateReunion" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTestP4.filteredRoomReunion" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Maréu.app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dfmareu.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dfmareu.com" />
+      <option name="MAIN_CLASS_NAME" value="dfmareu.com.UnitTestP4" />
+      <option name="METHOD_NAME" value="filteredRoomReunion" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Maréu.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="-r -t" />
+      <option name="ALL_USERS" value="true" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InstrumentedTestP4" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="Maréu.app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="dfmareu.com.InstrumentedTestP4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testDateFilterSucc...()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="Maréu.app" />
+      <option name="TESTING_TYPE" value="3" />
+      <option name="METHOD_NAME" value="testDateFilterSuccessfully" />
+      <option name="CLASS_NAME" value="dfmareu.com.InstrumentedTestP4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Android Instrumented Tests.InstrumentedTestP4" />
+      <item itemvalue="Android Instrumented Tests.testDateFilterSucc...()" />
+      <item itemvalue="Android JUnit.UnitTestP4.filteredDateReunion" />
+      <item itemvalue="Android JUnit.UnitTestP4.filteredRoomReunion" />
+      <item itemvalue="Android JUnit.UnitTestP4" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.UnitTestP4" />
+        <item itemvalue="Android JUnit.UnitTestP4.filteredRoomReunion" />
+        <item itemvalue="Android JUnit.UnitTestP4.filteredDateReunion" />
+        <item itemvalue="Android Instrumented Tests.testDateFilterSucc...()" />
+        <item itemvalue="Android Instrumented Tests.InstrumentedTestP4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\delco\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a60ae9b8-c8ab-43e4-82d7-cd81e1b6160e" name="Default Changelist" comment="" />
+      <created>1612430584771</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612430584771</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Mise en place des deux méthodes de filtrage =&gt; nullpointerexception sur la liste">
+      <created>1617206227918</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1617206227919</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Mise en place des deux méthodes de filtrage =&gt; nullpointerexception sur la liste">
+      <created>1617206492898</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1617206492898</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Mise en place du filtrage&#10;&#10;TODO : écrire les tests&#10;mise en place d'un try et catch autour du code pour virer les mauvais caractères et éviter le crash de l'appli">
+      <created>1617214458965</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1617214458965</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Prise en compte des caractères invalides + make toast d'avertissement&#10;&#10;Ecriture des tests unitaires pour les deux filtrages">
+      <created>1617268593439</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1617268593439</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Ecriture réussie du test add reunion">
+      <created>1617370558983</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1617370558983</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Ecriture du test instru Delete réussie =&gt; j'ai récupéré le parent d'item garbage, puis checké si un de ses descendant a le texte &quot;Salle A&quot;&#10;&#10;Cela ne fonctionnera uniquement s'il n'y a qu'une salle A">
+      <created>1617458734124</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1617458734124</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Changement nom des fichiers de tests&#10;&#10;+ optimisations des imports (suppression des unused)">
+      <created>1617459434395</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1617459434395</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Changement nom des fichiers de tests&#10;&#10;+ optimisations des imports (suppression des unused)">
+      <created>1617459579596</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1617459579596</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Changement de textes FR en anglais&#10;+&#10;Descriptions de variables">
+      <created>1617464519749</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1617464519750</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Suppression ReunionRepositoryTest.java">
+      <created>1617464677797</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1617464677798</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Réupload de changement (test instru add qui refonctionne)&#10;&#10;textes fr =&gt; anglais&#10;&#10;unused imports, etc.">
+      <created>1617466994408</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1617466994409</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Réglages array list vide fonctionnelle">
+      <created>1617540433013</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1617540433013</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Réglages array list vide fonctionnelle">
+      <created>1617540462633</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1617540462633</updated>
+    </task>
+    <task id="LOCAL-00112" summary="tentative changement des noms de dossiers des tests">
+      <created>1617546492511</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1617546492511</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Changements noms dossiers tests">
+      <created>1617547218625</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1617547218625</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Changements noms dossiers tests - suite">
+      <created>1617547313130</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1617547313130</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Changements noms dossiers tests - suite">
+      <created>1617548943386</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1617548943386</updated>
+    </task>
+    <task id="LOCAL-00116" summary="SetColorChip écrit dans ReunionUtil&#10;&#10;Parfaitement implémenter dans le ViewHolder.&#10;Tout fonctionne parfaitement">
+      <created>1617569821283</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1617569821284</updated>
+    </task>
+    <task id="LOCAL-00117" summary="SetColorChip écrit dans ReunionUtil&#10;&#10;Parfaitement implémenter dans le ViewHolder.&#10;Tout fonctionne parfaitement">
+      <created>1617570257591</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1617570257591</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Réupload project">
+      <created>1617633218037</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1617633218038</updated>
+    </task>
+    <task id="LOCAL-00119" summary="Optimisation">
+      <created>1617638954948</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1617638954948</updated>
+    </task>
+    <task id="LOCAL-00120" summary="tentative d'itération pour ajouter les fausses réunions à l'array du repository">
+      <created>1617728472690</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1617728472691</updated>
+    </task>
+    <task id="LOCAL-00121" summary="Mis en place du POC en fonction de l'orientation de l'application">
+      <created>1617738170336</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1617738170337</updated>
+    </task>
+    <task id="LOCAL-00122" summary="Set_up blocage CreateReunion.java en autoportrait (le scrollview ne fonctionne pas correctement quand un recyclerview est là)">
+      <created>1617786798089</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1617786798089</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Ajout de la méthode grisée pour tester avec de fausses réunion dans FakeApiReunion">
+      <created>1617787059491</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1617787059492</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Séparation de la classe ReunionUtil.java en deux classes uniques">
+      <created>1617803056361</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1617803056361</updated>
+    </task>
+    <task id="LOCAL-00125" summary="Changement pour remettre les fake reunions en place et effectuer les tests demandés par le P4">
+      <created>1617805439015</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1617805439015</updated>
+    </task>
+    <task id="LOCAL-00126" summary="Reprise du commit (sur Master) avec la modif de FakeApiReunion">
+      <created>1617805718912</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1617805718912</updated>
+    </task>
+    <task id="LOCAL-00127" summary="- MainActivity =&gt; ajout descriptions anglais de méthodes&#10;- MainActivityViewHolder =&gt; rename de la variable activityMainItemBinding en itemBinding pour plus de clarté">
+      <created>1617812323892</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1617812323892</updated>
+    </task>
+    <task id="LOCAL-00128" summary="- CheckReunionInformations =&gt; création d'une nouvelle classe pour contrôler si les informations sont remplies ou non&#10;&#10;- CreateReunionViewHolder =&gt; rename du binding&#10;&#10;- InstrumentedTestP4 =&gt; suppression de log">
+      <created>1617824866813</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1617824866813</updated>
+    </task>
+    <task id="LOCAL-00129" summary="- Suppression de deux méthodes inutilisées &#10;=&gt; une dans MareuApplication 'Visible for testing'&#10;=&gt; une dans Reunion 'Add random fake reunion'">
+      <created>1617887857854</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1617887857854</updated>
+    </task>
+    <task id="LOCAL-00130" summary="- Séparation de l'interface public DeleteListener de sa création dans MainActivityAdapter&#10;=&gt; meilleure maintenabilité">
+      <created>1617967234937</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1617967234939</updated>
+    </task>
+    <task id="LOCAL-00131" summary="- Mise à jour de la branche test avec les nouvelles optimisations">
+      <created>1617967387675</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1617967387675</updated>
+    </task>
+    <task id="LOCAL-00132" summary="Remise en état de la fake list">
+      <created>1617968446739</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1617968446740</updated>
+    </task>
+    <task id="LOCAL-00133" summary="Remise en état de la fake list">
+      <created>1617968560972</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1617968560972</updated>
+    </task>
+    <task id="LOCAL-00134" summary="changement affichage heure">
+      <created>1617975831063</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1617975831064</updated>
+    </task>
+    <task id="LOCAL-00135" summary="Divers changement durant le mentorat + ajout de RealApiReunion">
+      <created>1617977378499</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1617977378499</updated>
+    </task>
+    <task id="LOCAL-00136" summary="- Ajout de RealApiReunion (à changer dans ReunionRepository pour avoir une liste vide)&#10;- Correction indentation dans tout le projet&#10;- Modification affichage/filtrage de la date de réunion pour un filtrage day/month/year&#10;- Suppression des bundles month et year car devenus inutiles&#10;- Modification de la classe Reunion pour suppression des var month et year">
+      <created>1617978092204</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1617978092204</updated>
+    </task>
+    <task id="LOCAL-00137" summary="- Suppression todo dans CreateReunion&#10;- Suppression var month et year dans CreateReunion">
+      <created>1617978155345</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1617978155345</updated>
+    </task>
+    <task id="LOCAL-00138" summary="Changement de l'api injectée dans Injection par RealApiReunion">
+      <created>1617978312696</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1617978312696</updated>
+    </task>
+    <task id="LOCAL-00139" summary="- Modifications visuelles : changement taille fab mainActivity (auto)&#10;=&gt; changement disposition de la pastille de couleur&#10;=&gt; affichage de la date en plus de l'heure (donc modif aussi du view holder)&#10;=&gt; changement des fakes invités par mon mail, celui de mon mentor, et l'examinateur">
+      <created>1617982891287</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1617982891287</updated>
+    </task>
+    <task id="LOCAL-00140" summary="- Ajout d'un Horizontal ScrollView sur la liste des participants">
+      <created>1618160314493</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1618160314494</updated>
+    </task>
+    <task id="LOCAL-00141" summary="- Indentation vérifiée à nouveau&#10;- Changements sur fab buttons CreateReunion =&gt; emplacement (dans la toolbar)&#10;=&gt; taille changée en fonction de l'orientation">
+      <created>1618219540513</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1618219540514</updated>
+    </task>
+    <task id="LOCAL-00142" summary="Redéfinition de onConfigurationChanged avec l'ajout de l'initialisation de orientation (en global cela donnait un null pointer exception)">
+      <created>1618221695780</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1618221695780</updated>
+    </task>
+    <task id="LOCAL-00143" summary="- Changement affichage de l'heure&#10;&#10;TODO : obliger la vérification du choix de date pour valider une réunion">
+      <created>1618227308179</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1618227308180</updated>
+    </task>
+    <task id="LOCAL-00144" summary="- Changement affichage de la date&#10;- Changements tests unitaires et instrumentalisés pour prendre en compte les changements d'affichage&#10;&#10;TODO : obliger la vérification du choix de date pour valider une réunion">
+      <created>1618227925854</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1618227925854</updated>
+    </task>
+    <task id="LOCAL-00145" summary="- Correction de vérification des informations&#10;=&gt; prends en compte si la date a été choisie ou non&#10;&#10;possible d'optimiser le code en intégrant day dans check reunion">
+      <created>1618229367863</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1618229367863</updated>
+    </task>
+    <task id="LOCAL-00146" summary="- Mise à jour de la méthode CheckReunionInformations&#10;=&gt; ajout du contrôle de la date">
+      <created>1618231093059</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1618231093059</updated>
+    </task>
+    <task id="LOCAL-00147" summary="Ajout de fichiers manquants">
+      <created>1618261848477</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1618261848478</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Optimization" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
+    <confirmMoveToFailedCommit value="2" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="30" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Ajout de la méthode grisée pour tester avec de fausses réunion dans FakeApiReunion" />
+    <MESSAGE value="Séparation de la classe ReunionUtil.java en deux classes uniques" />
+    <MESSAGE value="Changement pour remettre les fake reunions en place et effectuer les tests demandés par le P4" />
+    <MESSAGE value="Reprise du commit (sur Master) avec la modif de FakeApiReunion" />
+    <MESSAGE value="- MainActivity =&gt; ajout descriptions anglais de méthodes&#10;- MainActivityViewHolder =&gt; rename de la variable activityMainItemBinding en itemBinding pour plus de clarté" />
+    <MESSAGE value="- CheckReunionInformations =&gt; création d'une nouvelle classe pour contrôler si les informations sont remplies ou non&#10;&#10;- CreateReunionViewHolder =&gt; rename du binding&#10;&#10;- InstrumentedTestP4 =&gt; suppression de Log" />
+    <MESSAGE value="- CheckReunionInformations =&gt; création d'une nouvelle classe pour contrôler si les informations sont remplies ou non&#10;&#10;- CreateReunionViewHolder =&gt; rename du binding&#10;&#10;- InstrumentedTestP4 =&gt; suppression de log" />
+    <MESSAGE value="- Suppression de deux méthodes inutilisées &#10;=&gt; une dans MareuApplication 'Visible for testing'&#10;=&gt; une dans Reunion 'Add random fake reunion'" />
+    <MESSAGE value="- Séparation de l'interface public DeleteListener de sa création dans MainActivityAdapter&#10;=&gt; meilleure maintenabilité" />
+    <MESSAGE value="- Mise à jour de la branche test avec les nouvelles optimisations" />
+    <MESSAGE value="Remise en état de la fake list" />
+    <MESSAGE value="changement affichage heure" />
+    <MESSAGE value="Divers changement durant le mentorat + ajout de RealApiReunion" />
+    <MESSAGE value="- Ajout de RealApiReunion (à changer dans ReunionRepository pour avoir une liste vide)&#10;- Correction indentation dans tout le projet&#10;- Modification affichage/filtrage de la date de réunion pour un filtrage day/month/year&#10;- Suppression des bundles month et year car devenus inutiles&#10;- Modification de la classe Reunion pour suppression des var month et year" />
+    <MESSAGE value="- Suppression todo dans CreateReunion&#10;- Suppression var month et year dans CreateReunion" />
+    <MESSAGE value="Changement de l'api injectée dans Injection par RealApiReunion" />
+    <MESSAGE value="- Modifications visuelles : changement taille fab mainActivity (auto)&#10;=&gt; changement disposition de la pastille de couleur&#10;=&gt; affichage de la date en plus de l'heure (donc modif aussi du view holder)&#10;=&gt; changement des fakes invités par mon mail, celui de mon mentor, et l'examinateur" />
+    <MESSAGE value="- Ajout d'un Horizontal ScrollView sur la liste des participants" />
+    <MESSAGE value="- Indentation vérifiée à nouveau&#10;- Changements sur fab buttons CreateReunion =&gt; emplacement (dans la toolbar)&#10;=&gt; taille changée en fonction de l'orientation" />
+    <MESSAGE value="Redéfinition de onConfigurationChanged avec l'ajout de l'initialisation de orientation (en global cela donnait un null pointer exception)" />
+    <MESSAGE value="- Changement affichage de l'heure&#10;&#10;TODO : obliger la vérification du choix de date pour valider une réunion" />
+    <MESSAGE value="- Changement affichage de la date&#10;- Changements tests unitaires et instrumentalisés pour prendre en compte les changements d'affichage&#10;&#10;TODO : obliger la vérification du choix de date pour valider une réunion" />
+    <MESSAGE value="- Correction de vérification des informations&#10;=&gt; prends en compte si la date a été choisie ou non&#10;&#10;possible d'optimiser le code en intégrant day dans check reunion" />
+    <MESSAGE value="- Mise à jour de la méthode CheckReunionInformations&#10;=&gt; ajout du contrôle de la date" />
+    <MESSAGE value="Ajout de fichiers manquants" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de fichiers manquants" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="482" y="158" key="#Console" timestamp="1617820371073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="482" y="158" key="#Console/0.0.1536.824@0.0.1536.824" timestamp="1617820371073" />
+    <state x="515" y="108" key="#Images" timestamp="1612543930230">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="515" y="108" key="#Images/0.0.1536.824@0.0.1536.824" timestamp="1612543930230" />
+    <state x="618" y="100" width="505" height="494" key="#Notifications" timestamp="1617571131966">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="618" y="100" width="505" height="494" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1617571131966" />
+    <state x="297" y="170" key="#PSD" timestamp="1617551423405">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="297" y="170" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1617551423405" />
+    <state x="524" y="325" key="#com.google.gct.testrecorder.ui.TestClassNameInputDialog" timestamp="1617455371955">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="325" key="#com.google.gct.testrecorder.ui.TestClassNameInputDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617035693943" />
+    <state x="524" y="325" key="#com.google.gct.testrecorder.ui.TestClassNameInputDialog/0.0.1536.824@0.0.1536.824" timestamp="1617455371955" />
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1615993981518">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1615993981518" />
+    <state x="248" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617560230193">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="248" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1617560230193" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1615215685267">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1615215685267" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1617966177316">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617120588388" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614350389644" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.8.1920.1040@0.0.1536.824" timestamp="1614709681205" />
+    <state x="2638" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.8.1920.1040@1920.8.1920.1040" timestamp="1614623444787" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1617966177315" />
+    <state x="440" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1616152324696">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="440" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1616152324696" />
+    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1616152334641">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1616152334641" />
+    <state x="566" y="294" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1615809508821">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="566" y="294" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1615809508821" />
+    <state x="25" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617812445763">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="25" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614003491855" />
+    <state x="25" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1617812445763" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617560932845">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617111192017" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614093518406" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1617560932845" />
+    <state x="370" y="32" key="#com_in_Maréu.app" timestamp="1617115118667">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="370" y="32" key="#com_in_Maréu.app/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617115118667" />
+    <state x="370" y="32" key="#com_in_Maréu.app/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1613231682234" />
+    <state x="528" y="262" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1617824763846">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="528" y="262" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1617824763846" />
+    <state x="100" y="100" width="1336" height="624" key="AVDManager" timestamp="1617968388862">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="100" y="100" width="1336" height="624" key="AVDManager/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617110794170" />
+    <state x="100" y="100" width="1336" height="624" key="AVDManager/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614098407410" />
+    <state x="100" y="100" width="1336" height="624" key="AVDManager/0.0.1536.824/1920.8.1920.1040@0.0.1536.824" timestamp="1614604438007" />
+    <state x="100" y="100" width="1336" height="624" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1617968388862" />
+    <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog" timestamp="1617465853251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1613224803063" />
+    <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1617465853251" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1617110918634">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617110918634" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614190906141" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824/1920.8.1920.1040@0.0.1536.824" timestamp="1614873802486" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1616054979415" />
+    <state x="565" y="159" key="AndroidProcessChooserDialog" timestamp="1614164798051">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="565" y="159" key="AndroidProcessChooserDialog/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614164798051" />
+    <state x="370" y="0" key="CommitChangelistDialog2" timestamp="1617549729496">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="370" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1617549729496" />
+    <state width="473" height="438" key="DebuggerActiveHint" timestamp="1615467575235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="473" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1615467575235" />
+    <state x="3" y="15" width="1350" height="638" key="DiffContextDialog" timestamp="1617570589276">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="3" y="15" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1617570589276" />
+    <state x="549" y="167" width="658" height="489" key="FileChooserDialogImpl" timestamp="1617733988402">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617206663099" />
+    <state x="549" y="167" width="658" height="489" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617733988402" />
+    <state x="314" y="286" key="GitRewordDialog" timestamp="1617021681252">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="314" y="286" key="GitRewordDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617021681252" />
+    <state width="1491" height="177" key="GridCell.Tab.0.bottom" timestamp="1618235412388">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617268529566" />
+    <state width="1491" height="165" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614360547342" />
+    <state width="1491" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.8.1920.1040@0.0.1536.824" timestamp="1614874924107" />
+    <state width="1876" height="243" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.8.1920.1040@1920.8.1920.1040" timestamp="1614678788014" />
+    <state width="1491" height="177" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618235412388" />
+    <state width="1491" height="177" key="GridCell.Tab.0.center" timestamp="1618235412388">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="187" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617268529566" />
+    <state width="1491" height="165" key="GridCell.Tab.0.center/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614360547342" />
+    <state width="1491" height="180" key="GridCell.Tab.0.center/0.0.1536.824/1920.8.1920.1040@0.0.1536.824" timestamp="1614874924107" />
+    <state width="1876" height="243" key="GridCell.Tab.0.center/0.0.1536.824/1920.8.1920.1040@1920.8.1920.1040" timestamp="1614678788014" />
+    <state width="1491" height="177" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618235412388" />
+    <state width="1491" height="177" key="GridCell.Tab.0.left" timestamp="1618235412388">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="187" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617268529565" />
+    <state width="1491" height="165" key="GridCell.Tab.0.left/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614360547341" />
+    <state width="1491" height="180" key="GridCell.Tab.0.left/0.0.1536.824/1920.8.1920.1040@0.0.1536.824" timestamp="1614874924107" />
+    <state width="1876" height="243" key="GridCell.Tab.0.left/0.0.1536.824/1920.8.1920.1040@1920.8.1920.1040" timestamp="1614678788014" />
+    <state width="1491" height="177" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618235412388" />
+    <state width="1491" height="177" key="GridCell.Tab.0.right" timestamp="1618235412388">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="187" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617268529566" />
+    <state width="1491" height="165" key="GridCell.Tab.0.right/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614360547342" />
+    <state width="1491" height="180" key="GridCell.Tab.0.right/0.0.1536.824/1920.8.1920.1040@0.0.1536.824" timestamp="1614874924107" />
+    <state width="1876" height="243" key="GridCell.Tab.0.right/0.0.1536.824/1920.8.1920.1040@1920.8.1920.1040" timestamp="1614678788014" />
+    <state width="1491" height="177" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618235412388" />
+    <state width="1491" height="76" key="GridCell.Tab.1.bottom" timestamp="1617458928071">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="76" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617047556067" />
+    <state width="1491" height="76" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617458928071" />
+    <state width="1491" height="76" key="GridCell.Tab.1.center" timestamp="1617458928071">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="76" key="GridCell.Tab.1.center/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617047556067" />
+    <state width="1491" height="76" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1617458928071" />
+    <state width="1491" height="76" key="GridCell.Tab.1.left" timestamp="1617458928071">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="76" key="GridCell.Tab.1.left/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617047556067" />
+    <state width="1491" height="76" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1617458928071" />
+    <state width="1491" height="76" key="GridCell.Tab.1.right" timestamp="1617458928071">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="76" key="GridCell.Tab.1.right/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617047556067" />
+    <state width="1491" height="76" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617458928071" />
+    <state x="349" y="155" key="IDE.errors.dialog" timestamp="1617570399915">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="155" key="IDE.errors.dialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617114661886" />
+    <state x="349" y="155" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1617570399915" />
+    <state x="259" y="65" key="MergeDialog" timestamp="1617571530518">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="259" y="65" key="MergeDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617116962334" />
+    <state x="259" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1617571530518" />
+    <state x="407" y="174" width="1062" height="476" key="MultipleFileMergeDialog" timestamp="1617978226749">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="407" y="174" width="945" height="476" key="MultipleFileMergeDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617112219712" />
+    <state x="407" y="174" width="1062" height="476" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1617978226749" />
+    <state x="519" y="115" key="RollbackChangesDialog" timestamp="1617571085097">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="519" y="115" key="RollbackChangesDialog/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614167330674" />
+    <state x="519" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1617571085097" />
+    <state x="206" y="0" key="ScreenshotViewer.Dimensions" timestamp="1617212569406">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="206" y="0" key="ScreenshotViewer.Dimensions/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617212569406" />
+    <state x="302" y="99" key="SettingsEditor" timestamp="1617632881112">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="302" y="99" key="SettingsEditor/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617048871945" />
+    <state x="302" y="99" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1617632881112" />
+    <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog" timestamp="1617805758398">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog/0.0.1536.824@0.0.1536.824" timestamp="1617805758398" />
+    <state width="498" height="449" key="SwitcherDM" timestamp="1617453386848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="449" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1617453386848" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1618261925354">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617268602310" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618261925354" />
+    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1617630293176">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617022919637" />
+    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1617630293176" />
+    <state x="471" y="221" key="com.android.tools.idea.run.deployment.ModifyDeviceSetDialog" timestamp="1617103980409">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="471" y="221" key="com.android.tools.idea.run.deployment.ModifyDeviceSetDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617103980409" />
+    <state x="471" y="221" key="com.android.tools.idea.run.deployment.ModifyDeviceSetDialog/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614098240523" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1617029933589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617029933589" />
+    <state x="414" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1612624005891">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="414" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1612624005891" />
+    <state x="558" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1617781988225">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="558" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1536.824@0.0.1536.824" timestamp="1617781988225" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617633279336">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1617633279336" />
+    <state x="540" y="234" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1615580777816">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="234" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1615580777816" />
+    <state x="320" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1617724854644">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="320" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1617724854644" />
+    <state x="-1531" y="-113" width="1253" height="809" maximized="true" key="dock-window-1" timestamp="1617204240428">
+      <screen x="-1920" y="-113" width="1920" height="1040" />
+    </state>
+    <state x="-1531" y="-113" width="1253" height="809" maximized="true" key="dock-window-1/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617204240428" />
+    <state x="-1278" y="2" width="910" height="809" maximized="true" key="dock-window-1/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614174142874" />
+    <state x="2305" y="160" width="1244" height="639" key="dock-window-1/0.0.1536.824/1920.8.1920.1040@0.0.1536.824" timestamp="1614871605296" />
+    <state x="308" y="120" width="996" height="507" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1615207877979" />
+    <state x="-1563" y="-113" width="1254" height="811" maximized="true" key="dock-window-2" timestamp="1617207273939">
+      <screen x="-1920" y="-113" width="1920" height="1040" />
+    </state>
+    <state x="-1563" y="-113" width="1254" height="811" maximized="true" key="dock-window-2/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617207273939" />
+    <state x="-1342" y="2" width="1212" height="809" maximized="true" key="dock-window-2/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1613574644675" />
+    <state x="-1497" y="-113" width="1254" height="581" maximized="true" key="dock-window-3" timestamp="1617207273939">
+      <screen x="-1920" y="-113" width="1920" height="1040" />
+    </state>
+    <state x="-1497" y="-113" width="1254" height="581" maximized="true" key="dock-window-3/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617207273939" />
+    <state x="475" y="11" width="586" height="801" key="find.popup" timestamp="1616156889195">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="475" y="11" width="586" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1616156889195" />
+    <state x="487" y="130" width="797" height="563" key="git4idea.branch.GitBranchIsNotFullyMergedDialog" timestamp="1617549490440">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="487" y="130" width="797" height="563" key="git4idea.branch.GitBranchIsNotFullyMergedDialog/0.0.1536.824@0.0.1536.824" timestamp="1617549490440" />
+    <state x="541" y="125" key="git4idea.branch.GitSmartOperationDialog" timestamp="1617975815375">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="541" y="125" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617116954028" />
+    <state x="541" y="125" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1612810058798" />
+    <state x="541" y="125" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824/1920.8.1920.1040@0.0.1536.824" timestamp="1614848375976" />
+    <state x="541" y="125" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1617975815375" />
+    <state x="549" y="217" key="git4idea.history.wholeTree.VcsStructureChooser" timestamp="1615883177600">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="217" key="git4idea.history.wholeTree.VcsStructureChooser/0.0.1536.824@0.0.1536.824" timestamp="1615883177600" />
+    <state x="550" y="201" key="git4idea.merge.GitMergeDialog" timestamp="1617463333274">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="550" y="201" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1617463333274" />
+    <state x="504" y="201" key="git4idea.merge.GitPullDialog" timestamp="1617549307897">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="504" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1617116922450" />
+    <state x="504" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1617549307897" />
+    <state x="522" y="274" width="539" height="314" key="git4idea.rebase.GitRebaseDialog" timestamp="1617540696943">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="522" y="274" width="539" height="314" key="git4idea.rebase.GitRebaseDialog/0.0.1536.824@0.0.1536.824" timestamp="1617540696943" />
+    <state x="569" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1617466211678">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="569" y="314" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1617466211678" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1615217188974">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1536.824@0.0.1536.824" timestamp="1615217188974" />
+    <state x="562" y="160" key="refactoring.ChangeSignatureDialog" timestamp="1616777116022">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="562" y="160" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-1920.-113.1920.1040@0.0.1536.824" timestamp="1616777116022" />
+    <state x="562" y="160" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1614277139531" />
+    <state x="562" y="160" key="refactoring.ChangeSignatureDialog/0.0.1536.824/1920.8.1920.1040@0.0.1536.824" timestamp="1614787881676" />
+    <state x="562" y="160" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1615995062577" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1613666471400">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.2.1920.1040@0.0.1536.824" timestamp="1613666471400" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/dfmareu/dfmareu/MainActivity/CreateReunionUnitTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/dfmareu/dfmareu/MainActivity/CreateReunionUnitTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="AndroidJUnit">
+        <watch expression="this" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Maréu$CreateReunionUnitTest_checkIfMailValid.ic" NAME="CreateReunionUnitTest.checkIfMailValid Coverage Results" MODIFIED="1615468303915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DFmareu.com.Views.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Maréu$ReunionTest_CheckUsers.ic" NAME="ReunionTest.CheckUsers Coverage Results" MODIFIED="1615480087262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DFmareu.com.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Maréu$CreateReunionUnitTest.ic" NAME="CreateReunionUnitTest Coverage Results" MODIFIED="1615471021514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DFmareu.com.Views.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Maréu$ReunionTest.ic" NAME="ReunionTest Coverage Results" MODIFIED="1615480176606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DFmareu.com.Util.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Maréu$ReunionTest_AddReunionToTheList.ic" NAME="ReunionTest.AddReunionToTheList Coverage Results" MODIFIED="1615480148825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DFmareu.com.*</FILTER>
+    </SUITE>
+  </component>
+</project>
