@@ -147,17 +147,18 @@ public class CreateReunion extends BaseActivity {
             String subject = mSubject.getText().toString();
             String spinner = (String) vSpinnerRooms.getSelectedItem();
             String hour = mChosenTime.getText().toString();
-            checkReunionInformations = new CheckReunionInformations(subject, mParticipantsList, hour);
+            String dayString = mChosenDate.getText().toString();
+
             //First, we must try to check if date had been chosen. Without try, we will get "Null Pointer Exception". We don't have this problem with time because it's a string
             try {
                 day = date.getDatePicker().getDayOfMonth();
             } catch (NullPointerException e) {
                 e.printStackTrace();
-                mChosenDate.setText(R.string.Reunion_Error_DateTxt);
-                mChosenDate.setTextColor(redColor);
             }
+            checkReunionInformations = new CheckReunionInformations(subject, mParticipantsList, hour, dayString);
+
             //If all required informations are written, it will send theses to the main activity and finish the current activity
-            if (checkReunionInformations.areInformationsCompleted() && !mChosenDate.getText().toString().contains(resources.getString(R.string.Reunion_Error_DateTxt))) {
+            if (checkReunionInformations.areInformationsCompleted()) {
                 ReunionInformations.putStringArrayList(NAVIGATIONparticipants, mParticipantsList);
                 ReunionInformations.putString(NAVIGATIONsubject, subject);
                 ReunionInformations.putString(NAVIGATIONroom, spinner);
@@ -177,7 +178,7 @@ public class CreateReunion extends BaseActivity {
                 if (checkReunionInformations.getNotSubjectEmpty()) {
                     mSubject.setHintTextColor(redColor);
                 }
-                if (mChosenDate.getText().toString().contains(resources.getString(R.string.Reunion_Error_DateTxt))){
+                if (checkReunionInformations.getNotDayEmpty()) {
                     mChosenDate.setText(R.string.Reunion_Error_DateTxt);
                     mChosenDate.setTextColor(redColor);
                 }
