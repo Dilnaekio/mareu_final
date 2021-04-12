@@ -124,7 +124,7 @@ public class CreateReunion extends BaseActivity {
             int month = calendar.get(Calendar.MONTH);
             int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
 
-            date = new DatePickerDialog(CreateReunion.this, (view1, year1, month1, day) -> mChosenDate.setText(format(Locale.getDefault(),"%02d/%02d/%02d", day, (month1 + 1), year1)), year, month, dayOfMonth);
+            date = new DatePickerDialog(CreateReunion.this, (view1, year1, month1, day) -> mChosenDate.setText(format(Locale.getDefault(), "%02d/%02d/%02d", day, (month1 + 1), year1)), year, month, dayOfMonth);
             date.show();
         });
 
@@ -157,7 +157,7 @@ public class CreateReunion extends BaseActivity {
                 mChosenDate.setTextColor(redColor);
             }
             //If all required informations are written, it will send theses to the main activity and finish the current activity
-            if (checkReunionInformations.areInformationsCompleted()) {
+            if (checkReunionInformations.areInformationsCompleted() && !mChosenDate.getText().toString().contains(resources.getString(R.string.Reunion_Error_DateTxt))) {
                 ReunionInformations.putStringArrayList(NAVIGATIONparticipants, mParticipantsList);
                 ReunionInformations.putString(NAVIGATIONsubject, subject);
                 ReunionInformations.putString(NAVIGATIONroom, spinner);
@@ -176,6 +176,10 @@ public class CreateReunion extends BaseActivity {
                 }
                 if (checkReunionInformations.getNotSubjectEmpty()) {
                     mSubject.setHintTextColor(redColor);
+                }
+                if (mChosenDate.getText().toString().contains(resources.getString(R.string.Reunion_Error_DateTxt))){
+                    mChosenDate.setText(R.string.Reunion_Error_DateTxt);
+                    mChosenDate.setTextColor(redColor);
                 }
             }
         });
