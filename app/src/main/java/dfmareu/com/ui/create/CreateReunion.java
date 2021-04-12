@@ -244,6 +244,7 @@ public class CreateReunion extends BaseActivity {
                 mEmptyRecycler.setVisibility(View.VISIBLE);
             }
         }
+        orientation = getResources().getConfiguration().orientation;
         if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
             binding.fabValidate.setSize(FloatingActionButton.SIZE_MINI);
             binding.fabCancel.setSize(FloatingActionButton.SIZE_MINI);
