@@ -124,7 +124,7 @@ public class CreateReunion extends BaseActivity {
             int month = calendar.get(Calendar.MONTH);
             int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
 
-            date = new DatePickerDialog(CreateReunion.this, (view1, year1, month1, day) -> mChosenDate.setText(format(Locale.getDefault(),"%02d/%02d/%02d", day, (month1 + 1), year1)), year, month, dayOfMonth);
+            date = new DatePickerDialog(CreateReunion.this, (view1, year1, month1, day) -> mChosenDate.setText(format(Locale.getDefault(), "%02d/%02d/%02d", day, (month1 + 1), year1)), year, month, dayOfMonth);
             date.show();
         });
 
@@ -147,15 +147,16 @@ public class CreateReunion extends BaseActivity {
             String subject = mSubject.getText().toString();
             String spinner = (String) vSpinnerRooms.getSelectedItem();
             String hour = mChosenTime.getText().toString();
-            checkReunionInformations = new CheckReunionInformations(subject, mParticipantsList, hour);
+            String dayString = mChosenDate.getText().toString();
+
             //First, we must try to check if date had been chosen. Without try, we will get "Null Pointer Exception". We don't have this problem with time because it's a string
             try {
                 day = date.getDatePicker().getDayOfMonth();
             } catch (NullPointerException e) {
                 e.printStackTrace();
-                mChosenDate.setText(R.string.Reunion_Error_DateTxt);
-                mChosenDate.setTextColor(redColor);
             }
+            checkReunionInformations = new CheckReunionInformations(subject, mParticipantsList, hour, dayString);
+
             //If all required informations are written, it will send theses to the main activity and finish the current activity
             if (checkReunionInformations.areInformationsCompleted()) {
                 ReunionInformations.putStringArrayList(NAVIGATIONparticipants, mParticipantsList);
@@ -176,6 +177,10 @@ public class CreateReunion extends BaseActivity {
                 }
                 if (checkReunionInformations.getNotSubjectEmpty()) {
                     mSubject.setHintTextColor(redColor);
+                }
+                if (checkReunionInformations.getNotDayEmpty()) {
+                    mChosenDate.setText(R.string.Reunion_Error_DateTxt);
+                    mChosenDate.setTextColor(redColor);
                 }
             }
         });

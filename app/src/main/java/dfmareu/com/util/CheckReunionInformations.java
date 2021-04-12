@@ -1,28 +1,28 @@
 package dfmareu.com.util;
 
-import android.util.Log;
-
 import java.util.ArrayList;
 
 public class CheckReunionInformations {
     private final String subject;
     private final ArrayList<String> participants;
     private final String hour;
+    private final String day;
 
-    Boolean isNotSubjectEmpty, isNotParticipantsEmpty, isNotHourEmpty = false;
+    Boolean isNotSubjectEmpty, isNotParticipantsEmpty, isNotHourEmpty, isNotDayEmpty = false;
 
-    public CheckReunionInformations(String subject, ArrayList<String> participants, String hour) {
+    public CheckReunionInformations(String subject, ArrayList<String> participants, String hour, String day) {
         this.subject = subject;
         this.participants = participants;
         this.hour = hour;
+        this.day = day;
     }
 
     public boolean areInformationsCompleted() {
         isNotSubjectEmpty = subject.length() == 0;
         isNotParticipantsEmpty = participants.isEmpty();
         isNotHourEmpty = hour.contains("Aucune heure");
-        Log.i("MainActivityFile", "Subject is empty = " + isNotSubjectEmpty.toString() + "/ Participants is empty " + isNotParticipantsEmpty.toString() + "/ Hour is empty " + isNotHourEmpty.toString());
-        return (!isNotSubjectEmpty && !isNotParticipantsEmpty && !isNotHourEmpty);
+        isNotDayEmpty = day.contains("Aucune date");
+        return (!isNotSubjectEmpty && !isNotParticipantsEmpty && !isNotHourEmpty && !isNotDayEmpty);
     }
 
     public Boolean getNotSubjectEmpty() {
@@ -38,5 +38,10 @@ public class CheckReunionInformations {
     public Boolean getNotHourEmpty() {
         isNotHourEmpty = hour.contains("Aucune heure");
         return isNotHourEmpty;
+    }
+
+    public Boolean getNotDayEmpty() {
+        isNotDayEmpty = day.contains("Aucune date");
+        return isNotDayEmpty;
     }
 }
