@@ -25,7 +25,7 @@ public class UnitTestP4 {
     @Before
     public void setUp(){
         reunionRepository = Injection.createReunionRepository();
-        reunionTest = new Reunion (FakeUsersList, "Sujet", "Salle Test", "01/1/2000", "18h00");
+        reunionTest = new Reunion (FakeUsersList, "Sujet", "Salle Test", "01/01/2000", "18h00");
     }
 
     @Test
@@ -54,7 +54,7 @@ public class UnitTestP4 {
     @Test
     public void filteredDateReunion(){
     reunionRepository.addReunion(reunionTest);
-    filterPattern = "01/1/2000";
+    filterPattern = "01/01/2000";
     filteredList = reunionRepository.getFilteredDate(filterPattern);
     filteredReunion = filteredList.get(0);
 
