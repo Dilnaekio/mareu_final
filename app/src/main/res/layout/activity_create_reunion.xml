@@ -16,205 +16,211 @@
         app:title="@string/toolbar_add_reunion"
         app:titleTextColor="@color/white" />
 
-    <LinearLayout
-        android:id="@+id/activity_create_reunion_firstLinear"
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:orientation="vertical">
+        android:layout_below="@id/toolbar">
 
         <LinearLayout
-            android:id="@+id/activity_create_reunion_LinearSubject"
+            android:id="@+id/activity_create_reunion_firstLinear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/activity_create_reunion_SubjectTxtView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="@string/Reunion_Subject_TxtView"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/activity_create_reunion_SubjectEditTxt"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:autofillHints="Sujet de la réunion"
-                android:gravity="bottom"
-                android:hint="@string/Reunion_Subject_EditTxtHint"
-                android:inputType="text"
-                android:padding="20dp"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/activity_create_reunion_LinearDateTime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <Button
-                    android:id="@+id/activity_create_reunion_DateBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="@string/Reunion_Date_BtnTxt"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"
-                    android:textStyle="italic"
-                    android:visibility="visible" />
-
-                <TextView
-                    android:id="@+id/activity_create_reunion_DateTxtView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/activity_create_reunion_DateBtn"
-                    android:layout_centerInParent="true"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="@string/Reunion_Date_Selected"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/activity_create_reunion_SelectedDate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/activity_create_reunion_DateTxtView"
-                    android:layout_centerInParent="true"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="@string/No_Date_Selected"
-                    android:textSize="12sp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <Button
-                    android:id="@+id/activity_create_reunion_TimeBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="@string/Reunion_Time_BtnTxt"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"
-                    android:textStyle="italic"
-                    android:visibility="visible" />
-
-                <TextView
-                    android:id="@+id/activity_create_reunion_TimeTxtView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/activity_create_reunion_TimeBtn"
-                    android:layout_centerInParent="true"
-                    android:layout_gravity="center_horizontal"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="@string/Reunion_Time_Selected"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/activity_create_reunion_SelectedTime"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/activity_create_reunion_TimeTxtView"
-                    android:layout_centerInParent="true"
-                    android:layout_gravity="center_horizontal"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="@string/No_Time_Selected"
-                    android:textSize="12sp" />
-            </RelativeLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/activity_create_reunion_LinearRooms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/activity_create_reunion_ChosenRoomTxtView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.25"
-                android:gravity="center_horizontal|center_vertical"
-                android:text="@string/Chosen_Room_TxtView"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-            <Spinner
-                android:id="@+id/activity_create_reunion_SpinnerRooms"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.75" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/activity_create_reunion_LinearParticipants"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/activity_create_reunion_participantTxtView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="@string/Reunion_Participant_TxtView"
-                android:textSize="12sp"
-                android:textStyle="bold" />
 
             <LinearLayout
+                android:id="@+id/activity_create_reunion_LinearSubject"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_create_reunion_SubjectTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/Reunion_Subject_TxtView"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/activity_create_reunion_ParticipantEditTxt"
-                    android:layout_width="0dp"
+                    android:id="@+id/activity_create_reunion_SubjectEditTxt"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="2.75"
-                    android:autofillHints="Adresse mail de la personne à inviter"
+                    android:autofillHints="Sujet de la réunion"
                     android:gravity="bottom"
-                    android:hint="@string/Reunion_Participant_EditTxtView"
-                    android:imeOptions="flagNoExtractUi"
+                    android:hint="@string/Reunion_Subject_EditTxtHint"
                     android:inputType="text"
+                    android:padding="20dp"
                     android:textSize="12sp" />
+            </LinearLayout>
 
-                <Button
-                    android:id="@+id/activity_create_reunion_participants_AcceptBtn"
+            <LinearLayout
+                android:id="@+id/activity_create_reunion_LinearDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.25" />
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/activity_create_reunion_DateBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/Reunion_Date_BtnTxt"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:textStyle="italic"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/activity_create_reunion_DateTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_create_reunion_DateBtn"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/Reunion_Date_Selected"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/activity_create_reunion_SelectedDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_create_reunion_DateTxtView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/No_Date_Selected"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/activity_create_reunion_TimeBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/Reunion_Time_BtnTxt"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:textStyle="italic"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/activity_create_reunion_TimeTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_create_reunion_TimeBtn"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/Reunion_Time_Selected"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/activity_create_reunion_SelectedTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_create_reunion_TimeTxtView"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/No_Time_Selected"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_create_reunion_LinearRooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_create_reunion_ChosenRoomTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/Chosen_Room_TxtView"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/activity_create_reunion_SpinnerRooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.75" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_create_reunion_LinearParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_create_reunion_participantTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/Reunion_Participant_TxtView"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/activity_create_reunion_ParticipantEditTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.75"
+                        android:autofillHints="Adresse mail de la personne à inviter"
+                        android:gravity="bottom"
+                        android:hint="@string/Reunion_Participant_EditTxtView"
+                        android:imeOptions="flagNoExtractUi"
+                        android:inputType="text"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/activity_create_reunion_participants_AcceptBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
     <RelativeLayout
         android:id="@+id/activity_create_reunion_LinearLayout_Recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/activity_create_reunion_firstLinear"
+        android:layout_below="@id/scrollView"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -250,6 +256,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="10dp"
         android:gravity="end"
         android:orientation="horizontal">
 
@@ -257,7 +264,7 @@
             android:id="@+id/fabCancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
             android:backgroundTint="@color/FabRed"
             android:contentDescription="@string/Main_Floating_Button"
             android:elevation="10dp"
@@ -268,7 +275,6 @@
             android:id="@+id/fabValidate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:backgroundTint="@color/green"
             android:contentDescription="@string/Main_Floating_Button"
             android:elevation="10dp"

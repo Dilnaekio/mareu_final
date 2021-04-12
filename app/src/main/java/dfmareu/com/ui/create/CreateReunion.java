@@ -22,16 +22,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Locale;
 
 import dfmareu.com.R;
 import dfmareu.com.base.BaseActivity;
 import dfmareu.com.databinding.ActivityCreateReunionBinding;
 import dfmareu.com.util.CheckReunionInformations;
 import dfmareu.com.util.IsMailValid;
+
+import static java.lang.String.format;
 
 public class CreateReunion extends BaseActivity {
 
@@ -70,7 +71,6 @@ public class CreateReunion extends BaseActivity {
     int redColor;
     ActivityCreateReunionBinding binding;
     CheckReunionInformations checkReunionInformations;
-    int orientation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +79,6 @@ public class CreateReunion extends BaseActivity {
         configureResources();
         configureSpinner();
         configureRecyclerView();
-        configureFabButtonSize();
 
         //Button and listener to check if user are typing mails in the edit text. If not, the user can't click on the button
         mAcceptParticipant.setEnabled(false);
@@ -134,7 +133,7 @@ public class CreateReunion extends BaseActivity {
             int hour = calendar.get(Calendar.HOUR_OF_DAY);
             int min = calendar.get(Calendar.MINUTE);
 
-            time = new TimePickerDialog(CreateReunion.this, (view12, hourOfDay, minute) -> mChosenTime.setText(getString(R.string.chosen_hour, hourOfDay, minute)), hour, min, true);
+            time = new TimePickerDialog(CreateReunion.this, (view12, hourOfDay, minute) -> mChosenTime.setText(format(Locale.getDefault(), "%02d:%02d", hourOfDay, minute)), hour, min, true);
             time.show();
         });
 
@@ -217,17 +216,6 @@ public class CreateReunion extends BaseActivity {
         vSpinnerRooms.setAdapter(roomsAdapter);
     }
 
-    private void configureFabButtonSize() {
-        orientation = getResources().getConfiguration().orientation;
-        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            binding.fabValidate.setSize(FloatingActionButton.SIZE_MINI);
-            binding.fabCancel.setSize(FloatingActionButton.SIZE_MINI);
-        } else {
-            binding.fabValidate.setSize(FloatingActionButton.SIZE_NORMAL);
-            binding.fabCancel.setSize(FloatingActionButton.SIZE_NORMAL);
-        }
-    }
-
     //If we must disabled "portrait" in the manifest, we already have this onConfigurationChanged method set up to clean data
     @Override
     public void onConfigurationChanged(@NonNull Configuration configuration) {
@@ -243,14 +231,6 @@ public class CreateReunion extends BaseActivity {
                 vGuestRecyclerView.setVisibility(View.GONE);
                 mEmptyRecycler.setVisibility(View.VISIBLE);
             }
-        }
-        orientation = getResources().getConfiguration().orientation;
-        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            binding.fabValidate.setSize(FloatingActionButton.SIZE_MINI);
-            binding.fabCancel.setSize(FloatingActionButton.SIZE_MINI);
-        } else {
-            binding.fabValidate.setSize(FloatingActionButton.SIZE_NORMAL);
-            binding.fabCancel.setSize(FloatingActionButton.SIZE_NORMAL);
         }
     }
 }
