@@ -50,7 +50,9 @@ public class CreateReunion extends BaseActivity {
     //Date/TimePickerDialog and var used for calendar
     DatePickerDialog date;
     TimePickerDialog time;
-    int day;
+    int dayPicker, dayOfMonthCalendar, monthCalendar, yearCalendar, hourCalendar, minCalendar;
+    int reunionDuration = 45;
+    Calendar reunionTimeSlot;
 
     //RecyclerView guests list
     RecyclerView vGuestRecyclerView;
@@ -120,20 +122,20 @@ public class CreateReunion extends BaseActivity {
         Calendar calendar = Calendar.getInstance();
         //Button to choose date
         mSelectDate.setOnClickListener(v -> {
-            int year = calendar.get(Calendar.YEAR);
-            int month = calendar.get(Calendar.MONTH);
-            int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
+            yearCalendar = calendar.get(Calendar.YEAR);
+            monthCalendar = calendar.get(Calendar.MONTH);
+            dayOfMonthCalendar = calendar.get(Calendar.DAY_OF_MONTH);
 
-            date = new DatePickerDialog(CreateReunion.this, (view1, year1, month1, day) -> mChosenDate.setText(format(Locale.getDefault(), "%02d/%02d/%02d", day, (month1 + 1), year1)), year, month, dayOfMonth);
+            date = new DatePickerDialog(CreateReunion.this, (view1, year1, month1, day) -> mChosenDate.setText(format(Locale.getDefault(), "%02d/%02d/%02d", day, (month1 + 1), year1)), yearCalendar, monthCalendar, dayOfMonthCalendar);
             date.show();
         });
 
         //Button to choose time
         mSelectTime.setOnClickListener(v -> {
-            int hour = calendar.get(Calendar.HOUR_OF_DAY);
-            int min = calendar.get(Calendar.MINUTE);
+            hourCalendar = calendar.get(Calendar.HOUR_OF_DAY);
+            minCalendar = calendar.get(Calendar.MINUTE);
 
-            time = new TimePickerDialog(CreateReunion.this, (view12, hourOfDay, minute) -> mChosenTime.setText(format(Locale.getDefault(), "%02dh%02d", hourOfDay, minute)), hour, min, true);
+            time = new TimePickerDialog(CreateReunion.this, (view12, hourOfDay, minute) -> mChosenTime.setText(format(Locale.getDefault(), "%02dh%02d", hourOfDay, minute)), hourCalendar, minCalendar, true);
             time.show();
         });
 
@@ -151,7 +153,7 @@ public class CreateReunion extends BaseActivity {
 
             //First, we must try to check if date had been chosen. Without try, we will get "Null Pointer Exception". We don't have this problem with time because it's a string
             try {
-                day = date.getDatePicker().getDayOfMonth();
+                dayPicker = date.getDatePicker().getDayOfMonth();
             } catch (NullPointerException e) {
                 e.printStackTrace();
             }
@@ -179,7 +181,6 @@ public class CreateReunion extends BaseActivity {
                     mSubject.setHintTextColor(redColor);
                 }
                 if (checkReunionInformations.getNotDayEmpty()) {
-                    mChosenDate.setText(R.string.Reunion_Error_DateTxt);
                     mChosenDate.setTextColor(redColor);
                 }
             }
