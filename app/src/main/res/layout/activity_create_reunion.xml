@@ -16,10 +16,10 @@
         app:title="@string/toolbar_add_reunion"
         app:titleTextColor="@color/white" />
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/toolbar">
 
         <LinearLayout
@@ -213,45 +213,45 @@
                         android:layout_weight="0.25" />
                 </LinearLayout>
             </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_create_reunion_LinearLayout_Recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_create_reunion_GuestListTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/Reunion_Guest_List_TxtView"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/activity_create_reunion_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/activity_create_reunion_GuestListTxtView"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <TextView
+                    android:id="@+id/activity_create_reunion_txtViewIfRecyclerEmpty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_create_reunion_GuestListTxtView"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/No_Participants_Data"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
         </LinearLayout>
-    </ScrollView>
-
-    <RelativeLayout
-        android:id="@+id/activity_create_reunion_LinearLayout_Recycler"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/scrollView"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/activity_create_reunion_GuestListTxtView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="@string/Reunion_Guest_List_TxtView"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/activity_create_reunion_recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/activity_create_reunion_GuestListTxtView"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-
-        <TextView
-            android:id="@+id/activity_create_reunion_txtViewIfRecyclerEmpty"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/activity_create_reunion_GuestListTxtView"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="@string/No_Participants_Data"
-            android:textStyle="bold"
-            android:visibility="gone" />
-    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
