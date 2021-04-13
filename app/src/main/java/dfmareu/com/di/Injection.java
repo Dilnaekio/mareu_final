@@ -8,6 +8,6 @@ public class Injection {
 
     //FakeApiReunion is used for simulate data base
     public static ReunionRepository createReunionRepository() {
-        return new ReunionRepository(new RealApiReunion());
+        return new ReunionRepository(new FakeApiReunion());
     }
 }
