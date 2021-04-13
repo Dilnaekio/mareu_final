@@ -102,6 +102,8 @@ public class InstrumentedTestP4 {
                         allOf(withId(R.id.activity_main_item_first_Linear), hasDescendant(withText("Salle B"))))))
                 .perform(click());
         onView(withId(R.id.activity_main_recycler_view))
+                .check(matches(atPosition(0, hasDescendant(withText("Salle A")))));
+        onView(withId(R.id.activity_main_recycler_view))
                 .check(matches(atPosition(1, hasDescendant(withText("Salle C")))));
     }
 
