@@ -102,9 +102,16 @@ public class InstrumentedTestP4 {
                         allOf(withId(R.id.activity_main_item_first_Linear), hasDescendant(withText("Salle B"))))))
                 .perform(click());
         onView(withId(R.id.activity_main_recycler_view))
-                .check(matches(atPosition(0, hasDescendant(withText("Salle A")))));
-        onView(withId(R.id.activity_main_recycler_view))
-                .check(matches(atPosition(1, hasDescendant(withText("Salle C")))));
+                .check(matches(atPosition(0, hasDescendant(withText("Salle A")))))
+                .check(matches(atPosition(1, hasDescendant(withText("Salle C")))))
+                .check(matches(atPosition(2, hasDescendant(withText("Salle D")))))
+                .check(matches(atPosition(3, hasDescendant(withText("Salle E")))))
+                .check(matches(atPosition(4, hasDescendant(withText("Salle F")))))
+                .check(matches(atPosition(5, hasDescendant(withText("Salle G")))))
+                .check(matches(atPosition(6, hasDescendant(withText("Salle H")))))
+                .check(matches(atPosition(7, hasDescendant(withText("Salle I")))))
+                .check(matches(atPosition(8, hasDescendant(withText("Salle J")))));
+
     }
 
     @Test
